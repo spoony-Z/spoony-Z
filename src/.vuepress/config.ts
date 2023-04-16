@@ -6,7 +6,7 @@ import theme from "./theme.js";
 
 export default defineUserConfig({
   // base: "/SOBER-Blog/",
-  base: "",
+  base: "/",
 
   locales: {
     "/": {
