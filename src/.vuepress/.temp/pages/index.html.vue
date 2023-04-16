@@ -34,32 +34,5 @@ projects:
 
 
 <style>
-  .titleH1 {
-    background-image: linear-gradient(to right,  #FFCC00, #ff1818, #ff4775);
-    color:transparent;
-    background-clip:text;
-  }
-  .gradient {
-    font-size: 16px;
-    font-weight: 600;
-    width: 150px;
-    height: 50px;
-    color: #fff;
-    border:1px solid rgba(0, 0, 0, 0.15);
-    border-radius:100px;
-    background: linear-gradient(-45deg, #ff1818, #FFCC00, #ff4775);
-    animation: gradientBG 5s ease infinite;
-    margin-right: 20px;
-  }
-  @keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-  }
+
 </style>

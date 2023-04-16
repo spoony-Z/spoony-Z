@@ -1,34 +1,31 @@
 // 在此处放置自定义样式
-.blog-hero .hero-image + h1 {
-    font-size: 50px;
-    background-image: linear-gradient(
-      90deg,
+.blog-hero .hero-image+h1 {
+  font-size: 50px;
+  background-image: linear-gradient(90deg,
       rgb(255, 162, 0) 0%,
       rgb(255, 149, 78) 25.3%,
       rgba(248, 112, 0, 0.703) 60.6%,
       rgb(248, 136, 0) 80.6%,
-      rgb(255, 179, 0) 100%
-    );
-    /*chrome私有样式，加前缀，文字显示背景图片*/
-    -webkit-background-clip: text;
-    /*文字颜色设为透明*/
-    color: transparent;
-    /*扩大背景区域*/
-    background-size: 300% 300%;
-    background-repeat: repeat;
-    // 渐变动画
-    // animation: preview-cover 1s infinite linear;
+      rgb(255, 179, 0) 100%);
+  /*chrome私有样式，加前缀，文字显示背景图片*/
+  -webkit-background-clip: text;
+  /*文字颜色设为透明*/
+  color: transparent;
+  /*扩大背景区域*/
+  background-size: 300% 300%;
+  background-repeat: repeat;
+  // 渐变动画
+  // animation: preview-cover 1s infinite linear;
 }
+
 .blogger-info .blogger-name {
   font-size: 25px;
-  background-image: linear-gradient(
-    90deg,
-    rgba(255, 215, 0, 1) 0%,
-    rgb(255, 149, 78) 25.3%,
-    rgba(248, 110, 0, 1) 60.6%,
-    rgb(248, 41, 0) 80.6%,
-    rgba(255, 215, 0, 1) 100%
-  );
+  background-image: linear-gradient(90deg,
+      rgba(255, 215, 0, 1) 0%,
+      rgb(255, 149, 78) 25.3%,
+      rgba(248, 110, 0, 1) 60.6%,
+      rgb(248, 41, 0) 80.6%,
+      rgba(255, 215, 0, 1) 100%);
   /*chrome私有样式，加前缀，文字显示背景图片*/
   -webkit-background-clip: text;
   /*文字颜色设为透明*/
@@ -40,41 +37,93 @@
   // 渐变动画
   animation: preview-cover 2s infinite linear;
 }
+
 @keyframes preview-cover {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: -150% 0;
-    }
+  0% {
+    background-position: 0 0;
   }
 
-  .social-media-wrapper {
-    justify-content: space-evenly !important;
+  100% {
+    background-position: -150% 0;
+  }
+}
+
+.social-media-wrapper {
+  justify-content: space-evenly !important;
+}
+
+// .article-item .article {
+//   box-shadow: none !important;
+//   border: 1px solid var(--theme-color);
+// }
+
+/** 隐藏代码行数 */
+div[class*=language-].line-numbers-mode pre {
+  margin-left: 0 !important;
+  padding-left: 20px;
+}
+
+div[class*=language-].line-numbers-mode::after {
+  display: none !important;
+}
+
+.theme-container .page.blog {
+  background: url("/spoony-z/beijin2.jpg") no-repeat fixed left / 100% auto;
+}
+
+.page .blog-info-wrapper .blogger-info {
+  background: url("/spoony-z/caihong.jpg") no-repeat fixed top / 100% 100%;
+  opacity: 1;
+}
+
+.blog-hero .description {
+  color: #000000
+}
+
+
+/** 首页样式 */
+.titleH1 {
+  background-image: linear-gradient(to right, #FFCC00, #ff1818, #ff4775);
+  color: transparent;
+  background-clip: text;
+}
+
+.gradient {
+  font-size: 16px;
+  font-weight: 600;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+  background: linear-gradient(-45deg, #ff1818, #FFCC00, #ff4775);
+  background-size: 400% 400%;
+  animation: gradientBG 5s ease infinite;
+  margin-right: 20px;
+}
+
+.infoStyle {
+  width: 150px;
+  height: 50px;
+  background-color: rgba(167, 167, 167, 0.55);
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+}
+.taglineStyle {
+  text-align:center;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
   }
 
-  // .article-item .article {
-  //   box-shadow: none !important;
-  //   border: 1px solid var(--theme-color);
-  // }
-
-  /** 隐藏代码行数 */
-  div[class*=language-].line-numbers-mode pre {
-    margin-left: 0 !important;
-    padding-left: 20px;
-  }
-  div[class*=language-].line-numbers-mode::after {
-    display: none !important;
-  }
-  .theme-container .page.blog {
-    background: url("/spoony-z/beijin2.jpg") no-repeat fixed left / 100% auto;
+  50% {
+    background-position: 100% 50%;
   }
 
-  .page .blog-info-wrapper .blogger-info {
-    background: url("/spoony-z/caihong.jpg") no-repeat fixed top / 100% 100%;
-    opacity: 1;
+  100% {
+    background-position: 0% 50%;
   }
-
-  .blog-hero .description {
-    color: #000000
-  }
+}

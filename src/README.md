@@ -8,12 +8,7 @@ heroText: SOBER
  # bgImage: /bg1.png
 bgImage: /bg1.png
 heroFullScreen: true
-tagline: <div style="text-align:center;">
-            <p class="titleH1">持之以恒以厚积薄发定会不同凡响！</p>
-            <a href="/learning-notes/">
-            <button style="background-size:400% 400%;" class="gradient">进入主页 💡</button></a>
-            <button style="width:150px;height:50px;background-color:rgba(167, 167, 167, 0.55);color:#fff;border:1px solid rgba(0, 0, 0, 0.15);border-radius:100px;">作者介绍 ✨</button>
-         </div>
+tagline: <div class="taglineStyle"><p class="titleH1">持之以恒以厚积薄发定会不同凡响！</p><a href="/spoony-z/learning-notes/"><button class="gradient">进入主页 💡</button></a><button class="infoStyle">作者介绍 ✨</button></div>
 projects:
   - icon: gitee
     name: Gitee主页
@@ -88,32 +83,5 @@ projects:
     -->
 
 <style>
-  .titleH1 {
-    background-image: linear-gradient(to right,  #FFCC00, #ff1818, #ff4775);
-    color:transparent;
-    background-clip:text;
-  }
-  .gradient {
-    font-size: 16px;
-    font-weight: 600;
-    width: 150px;
-    height: 50px;
-    color: #fff;
-    border:1px solid rgba(0, 0, 0, 0.15);
-    border-radius:100px;
-    background: linear-gradient(-45deg, #ff1818, #FFCC00, #ff4775);
-    animation: gradientBG 5s ease infinite;
-    margin-right: 20px;
-  }
-  @keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-  }
+
 </style>
