@@ -1,0 +1,1 @@
+import{aC as r}from"./mermaid.core-25ff936d.js";import"./app-c73848ae.js";import"./framework-b8ce1a77.js";const e=()=>"",t=e,p={db:{clear:()=>{}},styles:t,renderer:r,parser:{parser:{yy:{}},parse:()=>{}},init:()=>{}};export{p as diagram};

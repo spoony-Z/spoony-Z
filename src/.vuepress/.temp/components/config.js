@@ -1,13 +1,13 @@
 import { defineClientConfig } from "@vuepress/client";
-import { hasGlobalComponent } from "C:/Users/admin/Desktop/my-docs/my-docs/node_modules/vuepress-plugin-components/lib/client/shared.js";
+import { hasGlobalComponent } from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/shared.js";
 import { h } from "vue";
 
-import { useStyleTag } from "C:/Users/admin/Desktop/my-docs/my-docs/node_modules/vuepress-plugin-components/lib/client/vueuse.js";
-import Badge from "C:/Users/admin/Desktop/my-docs/my-docs/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
-import FontIcon from "C:/Users/admin/Desktop/my-docs/my-docs/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
-import BackToTop from "C:/Users/admin/Desktop/my-docs/my-docs/node_modules/vuepress-plugin-components/lib/client/components/BackToTop.js";
+import { useStyleTag } from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/vueuse.js";
+import Badge from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
+import FontIcon from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
+import BackToTop from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/BackToTop.js";
 
-import "C:/Users/admin/Desktop/my-docs/my-docs/node_modules/vuepress-plugin-components/lib/client/styles/sr-only.scss";
+import "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/styles/sr-only.scss";
 
 export default defineClientConfig({
   enhance: ({ app }) => {
