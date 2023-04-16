@@ -1,0 +1,14 @@
+node_modules/
+vuepress/dist/
+vuepress/.cache/
+vuepress/.temp/
+
+
+# 编辑器目录和文件
+.idea
+.vscode
+.history
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
