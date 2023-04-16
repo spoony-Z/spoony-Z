@@ -1,0 +1,1 @@
+import{_ as t,W as o,X as a,Z as e,$ as n}from"./framework-91490e6a.js";const r={},s=e("h1",{id:"前言",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#前言","aria-hidden":"true"},"#"),n(" 前言")],-1),c=e("p",null,"将你的个人介绍和档案放置在此处。",-1),_=[s,c];function d(i,l){return o(),a("div",null,_)}const f=t(r,[["render",d],["__file","intro.html.vue"]]);export{f as default};

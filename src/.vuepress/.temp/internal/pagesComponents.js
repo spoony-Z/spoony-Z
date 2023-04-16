@@ -3,14 +3,14 @@ import { defineAsyncComponent } from 'vue'
 export const pagesComponents = {
   // path: /
   "v-8daa1a0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/index.html.vue")),
+  // path: /npm-tool/rimraf.html
+  "v-7ec14f5c": defineAsyncComponent(() => import(/* webpackChunkName: "v-7ec14f5c" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/npm-tool/rimraf.html.vue")),
   // path: /development-notes/
   "v-54fc9519": defineAsyncComponent(() => import(/* webpackChunkName: "v-54fc9519" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/index.html.vue")),
   // path: /guide/2023%E8%AE%A1%E5%88%92%E8%A1%A8.html
   "v-20833aa2": defineAsyncComponent(() => import(/* webpackChunkName: "v-20833aa2" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/guide/2023计划表.html.vue")),
   // path: /guide/
   "v-fffb8e28": defineAsyncComponent(() => import(/* webpackChunkName: "v-fffb8e28" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/guide/index.html.vue")),
-  // path: /npm-tool/rimraf.html
-  "v-7ec14f5c": defineAsyncComponent(() => import(/* webpackChunkName: "v-7ec14f5c" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/npm-tool/rimraf.html.vue")),
   // path: /software-installation/IDEA%E5%AE%89%E8%A3%85.html
   "v-6aea5eee": defineAsyncComponent(() => import(/* webpackChunkName: "v-6aea5eee" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/IDEA安装.html.vue")),
   // path: /software-installation/IDEA%E7%9A%84%E4%BD%BF%E7%94%A8.html
