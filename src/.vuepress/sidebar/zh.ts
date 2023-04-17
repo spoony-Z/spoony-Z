@@ -35,7 +35,6 @@ export const zhSidebar = sidebar({
     },
     'sumUp',
   ],
-  '/learning-notes/TypeScript/': 'structure',
   "/development-notes/vue/": [
     {
       text: "vue开发笔记",
@@ -59,5 +58,13 @@ export const zhSidebar = sidebar({
   ],
   'npm-tool': 'structure',
   "software-installation" : 'structure',
-  "vue-template-list": 'structure'
+  "vue-template-list": 'structure',
+  "/learning-notes/TypeScript/": [
+    "",
+    {
+      text: "",
+      link: "",
+      children: "structure",
+    },
+  ],
 });
