@@ -437,6 +437,68 @@
 <p>字符串枚举没有自增长行为，因此，字符串枚举的每个成员必须有初始值</p>
 </div>
 <h2 id="any-类型" tabindex="-1"><a class="header-anchor" href="#any-类型" aria-hidden="true">#</a> any 类型</h2>
+<p><strong>原则：</strong> 不推荐使用any！会让TypeScript 变为“AnyScript”（失去TS类型保护的优势）
+因为当值的类型为 any 时，可以对该值进行任意操作，并且不会有代码提示。</p>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">obj</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">any</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> {</span><span style="color: #E06C75">x</span><span style="color: #ABB2BF">: </span><span style="color: #D19A66">0</span><span style="color: #ABB2BF">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 访问不存在的属性 或 赋值 */</span></span>
+<span class="line"><span style="color: #E5C07B">obj</span><span style="color: #ABB2BF">.</span><span style="color: #E06C75">aaa</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #E5C07B">obj</span><span style="color: #ABB2BF">.</span><span style="color: #E06C75">aaa</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #D19A66">10</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 当做函数调用 */</span></span>
+<span class="line"><span style="color: #61AFEF">obj</span><span style="color: #ABB2BF">();</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">解释</p>
+<p>以上操作都不会有任何类型错误提示，即使可能存在错误!
+尽可能的避免使用 any 类型，除非临时使用 any 来“避免”书写很长、很复杂的类型!<br />
+<strong>其他隐式具有any类型的情况</strong></p>
+<ol>
+<li>声明变量不提供类型也不提供默认值时</li>
+<li>函数参数不加类型时</li>
+</ol>
+</div>
+<div class="hint-container warning">
+<p class="hint-container-title">注意！</p>
+<p>因为不推荐使用any，所以，以上两种情况下都应该提供类型!</p>
+</div>
+<h2 id="typeof操作符" tabindex="-1"><a class="header-anchor" href="#typeof操作符" aria-hidden="true">#</a> typeof操作符</h2>
+<h3 id="介绍-1" tabindex="-1"><a class="header-anchor" href="#介绍-1" aria-hidden="true">#</a> 介绍</h3>
+<p>在JS 中的 typeof 操作符用来获取数据的类型 <br />
+在TS 中可以在类型上下文中引用变量或属性的类型(<strong>类型查询</strong>)</p>
+<h3 id="使用场景" tabindex="-1"><a class="header-anchor" href="#使用场景" aria-hidden="true">#</a> 使用场景</h3>
+<p>根据已有变量的值，获取该值的类型，来简化类型书写</p>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #7F848E; font-style: italic">/** 在js 中判断类型 输出string */</span></span>
+<span class="line"><span style="color: #E5C07B">console</span><span style="color: #ABB2BF">.</span><span style="color: #61AFEF">log</span><span style="color: #ABB2BF">(</span><span style="color: #C678DD">typeof</span><span style="color: #ABB2BF"> </span><span style="color: #98C379">&quot;Hello&quot;</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 在 ts 中 */</span></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">p</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> {</span><span style="color: #E06C75">x</span><span style="color: #ABB2BF">: </span><span style="color: #D19A66">0</span><span style="color: #ABB2BF">, </span><span style="color: #E06C75">y</span><span style="color: #ABB2BF">: </span><span style="color: #D19A66">2</span><span style="color: #ABB2BF">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 不使用 typeof */</span></span>
+<span class="line"><span style="color: #C678DD">function</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">formPoint</span><span style="color: #ABB2BF">(</span><span style="color: #E06C75; font-style: italic">point</span><span style="color: #ABB2BF">: {</span><span style="color: #E06C75">x</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">; </span><span style="color: #E06C75">y</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">}){}</span></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 使用 typeof */</span></span>
+<span class="line"><span style="color: #C678DD">function</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">formPoint</span><span style="color: #ABB2BF">(</span><span style="color: #E06C75; font-style: italic">point</span><span style="color: #ABB2BF">: </span><span style="color: #C678DD">typeof</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">p</span><span style="color: #ABB2BF">){}</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">解释</p>
+<ol>
+<li>使用 typeof 操作符来获取变量p 的类型，结果与第一种 (对象字面量形式的类型)相同</li>
+<li><strong>typeof</strong> 出现在类型注解的位置(参数名称的冒号后面)所处的环境就在类型上下文(区别于JS代码)</li>
+</ol>
+</div>
+<div class="hint-container warning">
+<p class="hint-container-title">注意！</p>
+<p><strong>typeof</strong> 只能用来查询变量或属性的类型，无法查询其他形式的类型(比如，函数调用的类型)</p>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #7F848E; font-style: italic">/** 查询对象属性的类型 */</span></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">p</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> {</span><span style="color: #E06C75">x</span><span style="color: #ABB2BF">: </span><span style="color: #D19A66">0</span><span style="color: #ABB2BF">, </span><span style="color: #E06C75">y</span><span style="color: #ABB2BF">: </span><span style="color: #D19A66">2</span><span style="color: #ABB2BF">};</span></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">num</span><span style="color: #ABB2BF">: </span><span style="color: #C678DD">typeof</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">p</span><span style="color: #ABB2BF">.</span><span style="color: #E06C75">x</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 查询对象函数的类型 */</span></span>
+<span class="line"><span style="color: #C678DD">function</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">add</span><span style="color: #ABB2BF">(</span><span style="color: #E06C75; font-style: italic">num1</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">, </span><span style="color: #E06C75; font-style: italic">num2</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">){</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #C678DD">return</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">num1</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">+</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">num2</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 报错 不能查询函数的类型 */</span></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">ret</span><span style="color: #ABB2BF">: </span><span style="color: #C678DD">typeof</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">add</span><span style="color: #ABB2BF">(</span><span style="color: #D19A66">1</span><span style="color: #ABB2BF">, </span><span style="color: #D19A66">2</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div>
 </div></template>
 
 

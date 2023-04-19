@@ -449,3 +449,70 @@ changeDirection(Direction.Left)
 
 ## any 类型
 
+**原则：** 不推荐使用any！会让TypeScript 变为“AnyScript”（失去TS类型保护的优势）
+因为当值的类型为 any 时，可以对该值进行任意操作，并且不会有代码提示。
+
+```typescript
+let obj: any = {x: 0};
+
+/** 访问不存在的属性 或 赋值 */
+obj.aaa;
+obj.aaa = 10;
+
+/** 当做函数调用 */
+obj();
+
+```
+
+:::tip 解释
+以上操作都不会有任何类型错误提示，即使可能存在错误!
+尽可能的避免使用 any 类型，除非临时使用 any 来“避免”书写很长、很复杂的类型!<br />
+**其他隐式具有any类型的情况**
+ 1. 声明变量不提供类型也不提供默认值时
+ 2. 函数参数不加类型时
+:::
+:::warning 注意！
+因为不推荐使用any，所以，以上两种情况下都应该提供类型!
+:::
+
+## typeof操作符
+
+### 介绍 
+在JS 中的 typeof 操作符用来获取数据的类型 <br />
+在TS 中可以在类型上下文中引用变量或属性的类型(**类型查询**)
+
+### 使用场景
+根据已有变量的值，获取该值的类型，来简化类型书写
+
+```typescript
+/** 在js 中判断类型 输出string */
+console.log(typeof "Hello");
+
+/** 在 ts 中 */
+let p = {x: 0, y: 2};
+
+/** 不使用 typeof */
+function formPoint(point: {x: number; y: number}){}
+/** 使用 typeof */
+function formPoint(point: typeof p){}
+```
+:::tip 解释
+1. 使用 typeof 操作符来获取变量p 的类型，结果与第一种 (对象字面量形式的类型)相同
+2. **typeof** 出现在类型注解的位置(参数名称的冒号后面)所处的环境就在类型上下文(区别于JS代码)
+:::
+:::warning 注意！
+**typeof** 只能用来查询变量或属性的类型，无法查询其他形式的类型(比如，函数调用的类型)
+```typescript
+/** 查询对象属性的类型 */
+let p = {x: 0, y: 2};
+let num: typeof p.x;
+
+/** 查询对象函数的类型 */
+function add(num1: number, num2: number){
+    return num1 + num2;
+}
+/** 报错 不能查询函数的类型 */
+let ret: typeof add(1, 2);
+```
+:::
+
