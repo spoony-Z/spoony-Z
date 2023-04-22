@@ -35,6 +35,13 @@ export const zhSidebar = sidebar({
     },
     'sumUp',
   ],
+  "/learning-notes/vue/": [
+    {
+      text: "vue学习笔记",
+      icon: "creative",
+      children: "structure",
+    },
+  ],
   "/development-notes/vue/": [
     {
       text: "vue开发笔记",
@@ -63,7 +70,6 @@ export const zhSidebar = sidebar({
     "",
     {
       text: "",
-      link: "",
       children: "structure",
     },
   ],

@@ -34,6 +34,7 @@ export const zhNavbar = navbar([
         children: [
           "java",
           "TypeScript",
+          "vue",
         ],
       },
       {
@@ -44,7 +45,7 @@ export const zhNavbar = navbar([
           "Javascript",
           "recat",
           "uniapp",
-          "vue"
+          "vue",
         ],
       },
     ],
@@ -70,6 +71,7 @@ export const zhNavbar = navbar([
         prefix: "npm-tool/",
         children: [
           "rimraf",
+          "npm上传包"
         ],
       },
     ]
