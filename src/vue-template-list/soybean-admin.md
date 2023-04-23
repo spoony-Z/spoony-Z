@@ -1,8 +1,6 @@
 # Soybean Admin
 <!-- more -->
 
-[![license](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
-
 ## 简介
 
 [Soybean Admin](https://github.com/honghuangdc/soybean-admin) 是一个基于 Vue3、Vite3、TypeScript、NaiveUI、Pinia 和 UnoCSS 的清新优雅的中后台模版，它使用了最新的前端技术栈，内置丰富的主题配置，有着极高的代码规范，基于 mock 实现的动态权限路由，开箱即用的中后台前端解决方案，也可用于学习参考。
@@ -20,7 +18,7 @@
 
 - [soybean-admin](https://soybean.pro/)
 
-## 文档
+## 文档 
 
 - [项目文档: docs.soybean.pro](https://docs.soybean.pro)
 
@@ -32,10 +30,6 @@
 - [gitee](https://gitee.com/honghuangdc/soybean-admin)
 - [tauri 版](https://gitee.com/honghuangdc/soybean-admin/tree/tauri)
 - [精简版](https://gitee.com/honghuangdc/soybean-admin/tree/thin)
-
-## 更新日志
-
-[CHANGELOG](./CHANGELOG.md)
 
 ## 后端服务
 
@@ -145,7 +139,3 @@ docker run --name soybean -p 80:80 -d soybeanjs/soybean-admin:v0.9.6
   <div style="text-align:left">
     <img src="https://i.loli.net/2021/11/24/1J6REWXiHomU2kM.jpg" style="width:200px" />
   </div>
-
-## License
-
-[MIT © Soybean-2021](./LICENSE)

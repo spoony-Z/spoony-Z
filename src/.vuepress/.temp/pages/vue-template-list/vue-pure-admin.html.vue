@@ -78,9 +78,7 @@
 <li>打包</li>
 </ul>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #ABB2BF">pnpm </span><span style="color: #98C379">build</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="更新日志" tabindex="-1"><a class="header-anchor" href="#更新日志" aria-hidden="true">#</a> 更新日志</h2>
-<p><RouterLink to="/vue-template-list/CHANGELOG.zh_CN.html">CHANGELOG</RouterLink></p>
-<h2 id="如何贡献" tabindex="-1"><a class="header-anchor" href="#如何贡献" aria-hidden="true">#</a> 如何贡献</h2>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="如何贡献" tabindex="-1"><a class="header-anchor" href="#如何贡献" aria-hidden="true">#</a> 如何贡献</h2>
 <p>非常欢迎您的加入！<a href="https://github.com/pure-admin/vue-pure-admin/issues/new/choose" target="_blank" rel="noopener noreferrer">提一个 Issue<ExternalLinkIcon/></a> 或者提交一个 <code v-pre>Pull Request</code></p>
 <p><strong>Pull Request:</strong></p>
 <ol>

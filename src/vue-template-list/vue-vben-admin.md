@@ -84,10 +84,6 @@ pnpm serve
 pnpm build
 ```
 
-## 更新日志
-
-[CHANGELOG](./CHANGELOG.zh_CN.md)
-
 ## 项目地址
 
 - [vue-vben-admin](https://github.com/anncwb/vue-vben-admin) - 完整版

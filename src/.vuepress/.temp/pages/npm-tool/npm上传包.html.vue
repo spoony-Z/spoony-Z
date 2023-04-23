@@ -11,10 +11,11 @@
 <h4 id="_3-public-文件夹" tabindex="-1"><a class="header-anchor" href="#_3-public-文件夹" aria-hidden="true">#</a> <strong>3. public 文件夹</strong></h4>
 <p>项目的静态问价文件</p>
 <h4 id="_4-src-中" tabindex="-1"><a class="header-anchor" href="#_4-src-中" aria-hidden="true">#</a> <strong>4. src 中</strong></h4>
-<p>(1). <strong>src</strong> 中的 <strong>components</strong> 文件夹<br />
-存放封装的组件，每一个组件是一个单独的文件夹</p>
-<div class="hint-container tip">
-<p class="hint-container-title">例如 components 中的 wangxiao-btn 文件夹</p>
+<details class="hint-container details"><summary>（1）src 中的 components</summary>
+<blockquote>
+<p><strong>components</strong> 中的文件夹是存放封装的组件，每一个组件是一个单独的文件夹<br />
+例如：<strong>wangxiao-btn</strong></p>
+</blockquote>
 <ul>
 <li>index.vue</li>
 </ul>
@@ -40,8 +41,8 @@
 <span class="line"><span style="color: #ABB2BF">}</span></span>
 <span class="line"></span>
 <span class="line"><span style="color: #C678DD">export</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">default</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">WangxiaoBtn</span><span style="color: #ABB2BF">;</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div>
-<p>(2). <strong>src</strong> 中的 <strong>index.js</strong></p>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></details>
+<details class="hint-container details"><summary>（2）src 中的 index.js</summary>
 <div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">import</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">WangxiaoTable</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">from</span><span style="color: #ABB2BF"> </span><span style="color: #98C379">&quot;./components/wangxiao-table/index.js&quot;</span><span style="color: #ABB2BF">;</span><span style="color: #E06C75">WangxiaoBtn</span></span>
 <span class="line"><span style="color: #C678DD">import</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">WangxiaoBtn</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">from</span><span style="color: #ABB2BF"> </span><span style="color: #98C379">&quot;./components/wangxiao-btn/index.js&quot;</span><span style="color: #ABB2BF">;</span></span>
 <span class="line"></span>
@@ -72,7 +73,8 @@
 <span class="line"><span style="color: #ABB2BF">    </span><span style="color: #7F848E; font-style: italic">// 所有组件，必须具有 install 方法才能使用 Vue.use()</span></span>
 <span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">WangxiaoTable</span><span style="color: #ABB2BF">,</span></span>
 <span class="line"><span style="color: #ABB2BF">};</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>(3). <strong>src</strong> 中的 <strong>main.js</strong></p>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></details>
+<details class="hint-container details"><summary>（3）src 中的 main.js</summary>
 <div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">import</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">Vue</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">from</span><span style="color: #ABB2BF"> </span><span style="color: #98C379">&#39;vue&#39;</span></span>
 <span class="line"><span style="color: #C678DD">import</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">App</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">from</span><span style="color: #ABB2BF"> </span><span style="color: #98C379">&#39;./App.vue&#39;</span></span>
 <span class="line"><span style="color: #C678DD">import</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">ElementUI</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">from</span><span style="color: #ABB2BF"> </span><span style="color: #98C379">&#39;element-ui&#39;</span><span style="color: #ABB2BF">;</span></span>
@@ -86,7 +88,8 @@
 <span class="line"><span style="color: #C678DD">new</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">Vue</span><span style="color: #ABB2BF">({</span></span>
 <span class="line"><span style="color: #ABB2BF">  </span><span style="color: #61AFEF">render</span><span style="color: #ABB2BF">: </span><span style="color: #E06C75; font-style: italic">h</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">h</span><span style="color: #ABB2BF">(</span><span style="color: #E06C75">App</span><span style="color: #ABB2BF">),</span></span>
 <span class="line"><span style="color: #ABB2BF">}).</span><span style="color: #61AFEF">$mount</span><span style="color: #ABB2BF">(</span><span style="color: #98C379">&#39;#app&#39;</span><span style="color: #ABB2BF">)</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="三、配置-package-json-文件" tabindex="-1"><a class="header-anchor" href="#三、配置-package-json-文件" aria-hidden="true">#</a> 三、配置 package.json 文件</h2>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></details>
+<h2 id="三、配置-package-json-文件" tabindex="-1"><a class="header-anchor" href="#三、配置-package-json-文件" aria-hidden="true">#</a> 三、配置 package.json 文件</h2>
 <h3 id="_1-配置打包命令-lib" tabindex="-1"><a class="header-anchor" href="#_1-配置打包命令-lib" aria-hidden="true">#</a> 1. 配置打包命令 <strong>lib</strong></h3>
 <blockquote>
 <div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #ABB2BF">  </span><span style="color: #98C379">&quot;scripts&quot;</span><span style="color: #ABB2BF">: {</span></span>
@@ -146,6 +149,7 @@
 <p>keywords， main， module，exports，files 与 scripts 平级</p>
 </div>
 <h3 id="_6-完整配置" tabindex="-1"><a class="header-anchor" href="#_6-完整配置" aria-hidden="true">#</a> 6. 完整配置</h3>
+<details class="hint-container details"><summary>package.age完整代码</summary>
 <div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #ABB2BF">{</span></span>
 <span class="line"><span style="color: #ABB2BF">  </span><span style="color: #E06C75">&quot;name&quot;</span><span style="color: #ABB2BF">: </span><span style="color: #98C379">&quot;168-wangxiao-ui-table&quot;</span><span style="color: #ABB2BF">,</span></span>
 <span class="line"><span style="color: #ABB2BF">  </span><span style="color: #E06C75">&quot;version&quot;</span><span style="color: #ABB2BF">: </span><span style="color: #98C379">&quot;0.1.8&quot;</span><span style="color: #ABB2BF">,</span></span>
@@ -205,12 +209,23 @@
 <span class="line"><span style="color: #ABB2BF">    </span><span style="color: #98C379">&quot;not dead&quot;</span></span>
 <span class="line"><span style="color: #ABB2BF">  ]</span></span>
 <span class="line"><span style="color: #ABB2BF">}</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="四、上传到-npm" tabindex="-1"><a class="header-anchor" href="#四、上传到-npm" aria-hidden="true">#</a> 四、上传到 npm</h2>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></details>
+<h2 id="四、上传到-npm" tabindex="-1"><a class="header-anchor" href="#四、上传到-npm" aria-hidden="true">#</a> 四、上传到 npm</h2>
 <h3 id="_1-登录npm官网-注册账号" tabindex="-1"><a class="header-anchor" href="#_1-登录npm官网-注册账号" aria-hidden="true">#</a> 1. 登录npm官网，<a href="https://www.npmjs.com" target="_blank" rel="noopener noreferrer">注册账号<ExternalLinkIcon/></a></h3>
 <h3 id="_2-将封装好的组件打包" tabindex="-1"><a class="header-anchor" href="#_2-将封装好的组件打包" aria-hidden="true">#</a> 2. 将封装好的组件打包</h3>
+<Tabs id="168" :data='[{"title":"npm"},{"title":"banana"},{"title":"orange"}]'>
+<template #tab0="{ title, value, isActive }">
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #7F848E; font-style: italic"># 项目根目录下回生成 dist 文件夹</span></span>
 <span class="line"><span style="color: #ABB2BF">npm </span><span style="color: #98C379">run</span><span style="color: #ABB2BF"> </span><span style="color: #98C379">lib</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-上传到-npm" tabindex="-1"><a class="header-anchor" href="#_3-上传到-npm" aria-hidden="true">#</a> 3. 上传到 npm</h3>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></template>
+<template #tab1="{ title, value, isActive }">
+<p>Banana</p>
+</template>
+<template #tab2="{ title, value, isActive }">
+<p>Orange</p>
+</template>
+</Tabs>
+<h3 id="_3-上传到-npm" tabindex="-1"><a class="header-anchor" href="#_3-上传到-npm" aria-hidden="true">#</a> 3. 上传到 npm</h3>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #7F848E; font-style: italic"># 使用命令上传</span></span>
 <span class="line"><span style="color: #ABB2BF">npm </span><span style="color: #98C379">publish</span></span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container warning">
@@ -260,6 +275,24 @@
 <span class="line"></span>
 <span class="line"><span style="color: #7F848E; font-style: italic"># 添加用户</span></span>
 <span class="line"><span style="color: #ABB2BF">npm </span><span style="color: #98C379">adduser</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><VideoPlayer
+  src="https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f1/Sintel_movie_4K.webm/Sintel_movie_4K.webm.1080p.vp9.webm"
+  poster="/assets/poster.svg"
+  :tracks="[
+    {
+      default: true,
+      src: '/assets/subtitles/en.vtt',
+      kind: 'subtitles',
+      label: 'English',
+      srcLang: 'en',
+    },
+    {
+      src: '/assets/subtitles/fr.vtt',
+      kind: 'subtitles',
+      label: 'French',
+      srcLang: 'fr',
+    },
+  ]"
+/></div></template>
 
 

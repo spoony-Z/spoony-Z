@@ -7,8 +7,8 @@ import clientConfig5 from 'C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z
 import clientConfig6 from 'C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import clientConfig7 from 'C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-copy-code2/lib/client/config.js'
 import clientConfig8 from 'C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/md-enhance/config.js'
-import clientConfig9 from 'C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/theme-hope/config.js'
-import clientConfig10 from 'C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-photo-swipe/lib/client/config.js'
+import clientConfig9 from 'C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-photo-swipe/lib/client/config.js'
+import clientConfig10 from 'C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/theme-hope/config.js'
 import clientConfig11 from 'C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-search-pro/lib/client/config.js'
 
 export const clientConfigs = [

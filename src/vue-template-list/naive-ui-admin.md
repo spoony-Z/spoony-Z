@@ -94,10 +94,6 @@ yarn dev
 yarn build
 ```
 
-## 更新日志
-
-[CHANGELOG](./CHANGELOG.md)
-
 
 ## 如何贡献
 

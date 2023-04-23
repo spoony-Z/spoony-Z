@@ -1,6 +1,5 @@
 <template><div><h1 id="soybean-admin" tabindex="-1"><a class="header-anchor" href="#soybean-admin" aria-hidden="true">#</a> Soybean Admin</h1>
 <!-- more -->
-<figure><a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="license" tabindex="0" loading="lazy"></a><figcaption>license</figcaption></figure>
 <h2 id="简介" tabindex="-1"><a class="header-anchor" href="#简介" aria-hidden="true">#</a> 简介</h2>
 <p><a href="https://github.com/honghuangdc/soybean-admin" target="_blank" rel="noopener noreferrer">Soybean Admin<ExternalLinkIcon/></a> 是一个基于 Vue3、Vite3、TypeScript、NaiveUI、Pinia 和 UnoCSS 的清新优雅的中后台模版，它使用了最新的前端技术栈，内置丰富的主题配置，有着极高的代码规范，基于 mock 实现的动态权限路由，开箱即用的中后台前端解决方案，也可用于学习参考。</p>
 <h2 id="特性" tabindex="-1"><a class="header-anchor" href="#特性" aria-hidden="true">#</a> 特性</h2>
@@ -29,8 +28,6 @@
 <li><a href="https://gitee.com/honghuangdc/soybean-admin/tree/tauri" target="_blank" rel="noopener noreferrer">tauri 版<ExternalLinkIcon/></a></li>
 <li><a href="https://gitee.com/honghuangdc/soybean-admin/tree/thin" target="_blank" rel="noopener noreferrer">精简版<ExternalLinkIcon/></a></li>
 </ul>
-<h2 id="更新日志" tabindex="-1"><a class="header-anchor" href="#更新日志" aria-hidden="true">#</a> 更新日志</h2>
-<p><RouterLink to="/vue-template-list/CHANGELOG.html">CHANGELOG</RouterLink></p>
 <h2 id="后端服务" tabindex="-1"><a class="header-anchor" href="#后端服务" aria-hidden="true">#</a> 后端服务</h2>
 <ul>
 <li><a href="https://github.com/honghuangdc/soybean-admin-java" target="_blank" rel="noopener noreferrer">soybean-admin-java<ExternalLinkIcon/></a></li>
@@ -123,11 +120,8 @@
 <p>QQ 交流群 <code v-pre>711301266</code></p>
 <div style="text-align:left">
   <img src="https://i.loli.net/2021/11/24/1J6REWXiHomU2kM.jpg" style="width:200px" />
-</div>
-</li>
+</div></li>
 </ul>
-<h2 id="license" tabindex="-1"><a class="header-anchor" href="#license" aria-hidden="true">#</a> License</h2>
-<p><a href="./LICENSE">MIT © Soybean-2021</a></p>
 </div></template>
 
 
