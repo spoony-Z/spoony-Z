@@ -50,8 +50,6 @@
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-3" disabled="disabled"><label class="task-list-item-label" for="task-item-3"> 纯前端导出 PDF 自动分页</label></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-4" disabled="disabled"><label class="task-list-item-label" for="task-item-4"> 其他...</label></li>
 </ul>
-<h2 id="更新日志" tabindex="-1"><a class="header-anchor" href="#更新日志" aria-hidden="true">#</a> 更新日志</h2>
-<p><RouterLink to="/vue-template-list/CHANGELOG.html">CHANGELOG</RouterLink></p>
 <h2 id="git-贡献提交规范" tabindex="-1"><a class="header-anchor" href="#git-贡献提交规范" aria-hidden="true">#</a> Git 贡献提交规范</h2>
 <ul>
 <li>

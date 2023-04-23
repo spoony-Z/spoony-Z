@@ -87,10 +87,6 @@ pnpm serve
 pnpm build
 ```
 
-## 更新日志
-
-[CHANGELOG](./CHANGELOG.zh_CN.md)
-
 ## 如何贡献
 
 非常欢迎您的加入！[提一个 Issue](https://github.com/pure-admin/vue-pure-admin/issues/new/choose) 或者提交一个 `Pull Request`

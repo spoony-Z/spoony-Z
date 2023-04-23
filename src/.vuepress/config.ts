@@ -1,6 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { shikiPlugin } from "@vuepress/plugin-shiki";
-import { photoSwipePlugin } from "vuepress-plugin-photo-swipe";
+// import { photoSwipePlugin } from "vuepress-plugin-photo-swipe";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import theme from "./theme.js";
 
@@ -23,47 +23,47 @@ export default defineUserConfig({
       theme: "one-dark-pro",
     }),
 
-    /** 图片预览插件 */
-    photoSwipePlugin({
-      locales: {
-        "/": {
-          /**
-           * 关闭按钮标签文字
-           */
-          close: "关闭按钮标签文字",
+    // /** 图片预览插件 */
+    // photoSwipePlugin({
+    //   locales: {
+    //     "/": {
+    //       /**
+    //        * 关闭按钮标签文字
+    //        */
+    //       close: "关闭按钮标签文字",
 
-          /**
-           * 全屏按钮标签文字
-           */
-          fullscreen: "全屏按钮标签文字",
+    //       /**
+    //        * 全屏按钮标签文字
+    //        */
+    //       fullscreen: "全屏按钮标签文字",
 
-          /**
-           * 分享按钮标签文字
-           */
-          share: "分享按钮标签文字",
+    //       /**
+    //        * 分享按钮标签文字
+    //        */
+    //       share: "分享按钮标签文字",
 
-          /**
-           * 缩放按钮标签文字
-           */
-          zoom: "缩放按钮标签文字",
+    //       /**
+    //        * 缩放按钮标签文字
+    //        */
+    //       zoom: "缩放按钮标签文字",
 
-          /**
-           * 上一张图片按钮标签文字
-           */
-          prev: "上一张图片按钮标签文字",
+    //       /**
+    //        * 上一张图片按钮标签文字
+    //        */
+    //       prev: "上一张图片按钮标签文字",
 
-          /**
-           * 下一张图片按钮标签文字
-           */
-          next: "下一张图片按钮标签文字",
+    //       /**
+    //        * 下一张图片按钮标签文字
+    //        */
+    //       next: "下一张图片按钮标签文字",
 
-          /**
-           * 功能按钮配置
-           */
-          // buttons: PhotoSwipeDefaultUI.ShareButtonData[];
-        },
-      },
-    }),
+    //       /**
+    //        * 功能按钮配置
+    //        */
+    //       // buttons: PhotoSwipeDefaultUI.ShareButtonData[];
+    //     },
+    //   },
+    // }),
 
     /** 搜索插件 */
      searchProPlugin({

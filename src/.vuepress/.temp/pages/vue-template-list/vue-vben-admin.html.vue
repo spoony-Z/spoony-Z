@@ -63,9 +63,7 @@
 <li>打包</li>
 </ul>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #ABB2BF">pnpm </span><span style="color: #98C379">build</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="更新日志" tabindex="-1"><a class="header-anchor" href="#更新日志" aria-hidden="true">#</a> 更新日志</h2>
-<p><RouterLink to="/vue-template-list/CHANGELOG.zh_CN.html">CHANGELOG</RouterLink></p>
-<h2 id="项目地址" tabindex="-1"><a class="header-anchor" href="#项目地址" aria-hidden="true">#</a> 项目地址</h2>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="项目地址" tabindex="-1"><a class="header-anchor" href="#项目地址" aria-hidden="true">#</a> 项目地址</h2>
 <ul>
 <li><a href="https://github.com/anncwb/vue-vben-admin" target="_blank" rel="noopener noreferrer">vue-vben-admin<ExternalLinkIcon/></a> - 完整版</li>
 <li><a href="https://github.com/anncwb/vben-admin-thin-next" target="_blank" rel="noopener noreferrer">vue-vben-admin-thin-next<ExternalLinkIcon/></a> - 简化版</li>

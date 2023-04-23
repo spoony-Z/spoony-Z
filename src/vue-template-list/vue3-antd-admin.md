@@ -63,10 +63,6 @@ yarn build
 - [ ] 纯前端导出 PDF 自动分页
 - [ ] 其他...
 
-## 更新日志
-
-[CHANGELOG](./CHANGELOG.md)
-
 ## Git 贡献提交规范
 
 - 参考 [vue](https://github.com/vuejs/vue/blob/dev/.github/COMMIT_CONVENTION.md) 规范 ([Angular](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular))

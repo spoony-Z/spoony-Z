@@ -19,9 +19,10 @@ node_modules 项目依赖包
 项目的静态问价文件
 
 #### **4. src 中**
-(1). **src** 中的 **components** 文件夹<br />
-存放封装的组件，每一个组件是一个单独的文件夹
-:::tip 例如 components 中的 wangxiao-btn 文件夹
+
+:::details （1）src 中的 components
+> **components** 中的文件夹是存放封装的组件，每一个组件是一个单独的文件夹<br />
+> 例如：**wangxiao-btn**
 - index.vue
 ```vue
 <template>
@@ -49,7 +50,8 @@ export default WangxiaoBtn;
 ```
 :::
 
-(2). **src** 中的 **index.js**
+
+:::details （2）src 中的 index.js
 ```javascript
 import WangxiaoTable from "./components/wangxiao-table/index.js";WangxiaoBtn
 import WangxiaoBtn from "./components/wangxiao-btn/index.js";
@@ -82,8 +84,9 @@ export default {
     WangxiaoTable,
 };
 ```
+:::
 
-(3). **src** 中的 **main.js**
+:::details （3）src 中的 main.js
 ```javascript
 import Vue from 'vue'
 import App from './App.vue'
@@ -99,6 +102,7 @@ new Vue({
   render: h => h(App),
 }).$mount('#app')
 ```
+:::
 
 
 ## 三、配置 package.json 文件
@@ -154,6 +158,9 @@ new Vue({
 keywords， main， module，exports，files 与 scripts 平级
 :::
 ### 6. 完整配置
+
+::: details package.age完整代码
+
 ```json
 {
   "name": "168-wangxiao-ui-table",
@@ -215,15 +222,31 @@ keywords， main， module，exports，files 与 scripts 平级
   ]
 }
 ```
+:::
 
 ## 四、上传到 npm
   
 ### 1. 登录npm官网，[注册账号](https://www.npmjs.com)
 ### 2. 将封装好的组件打包
+::: tabs
+
+@tab npm
+
 ```sh
 # 项目根目录下回生成 dist 文件夹
 npm run lib
 ```
+
+@tab banana
+
+Banana
+
+@tab orange
+
+Orange
+
+:::
+
 ### 3. 上传到 npm
 ```sh
 # 使用命令上传

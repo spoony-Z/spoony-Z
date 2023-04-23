@@ -2,7 +2,6 @@
 <!-- more -->
 <h2 id="简介" tabindex="-1"><a class="header-anchor" href="#简介" aria-hidden="true">#</a> 简介</h2>
 <ul>
-<li><RouterLink to="/vue-template-list/VERSION.html">更新日志</RouterLink></li>
 <li>经过三个多月的迭代，于2021年8月10日，1.0版本正式发布，并附四个基础模板供大家使用</li>
 <li>此开源项目为个人开发，不限制任何商业使用和个人研究，使用之前请先点个Star对我进行鼓励</li>
 <li>利用此开源项目参与的一切违法、色情相关的活动均与本源码无关，请勿以身示法</li>
