@@ -275,6 +275,24 @@
 <span class="line"></span>
 <span class="line"><span style="color: #7F848E; font-style: italic"># 添加用户</span></span>
 <span class="line"><span style="color: #ABB2BF">npm </span><span style="color: #98C379">adduser</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><VideoPlayer
+  src="https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f1/Sintel_movie_4K.webm/Sintel_movie_4K.webm.1080p.vp9.webm"
+  poster="/assets/poster.svg"
+  :tracks="[
+    {
+      default: true,
+      src: '/assets/subtitles/en.vtt',
+      kind: 'subtitles',
+      label: 'English',
+      srcLang: 'en',
+    },
+    {
+      src: '/assets/subtitles/fr.vtt',
+      kind: 'subtitles',
+      label: 'French',
+      srcLang: 'fr',
+    },
+  ]"
+/></div></template>
 
 

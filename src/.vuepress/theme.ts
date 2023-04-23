@@ -161,6 +161,23 @@ export default hopeTheme({
       vPre: true,
       vuePlayground: true,
     },
+    components: {
+      // 你想使用的组件
+      components: [
+        "ArtPlayer",
+        "AudioPlayer",
+        "Badge",
+        "BiliBili",
+        "CodePen",
+        "FontIcon",
+        "PDF",
+        "Replit",
+        "SiteInfo",
+        "StackBlitz",
+        "VideoPlayer",
+        "YouTube",
+      ],
+    },
 
     // uncomment these if you want a PWA
     // pwa: {
