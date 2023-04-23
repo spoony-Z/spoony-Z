@@ -218,6 +218,7 @@
 <li>属性 <strong>age</strong> 后面的类型注解(比如，此处的 <strong>number</strong> ) 如果不加，则 <strong>age</strong> 的类型为 18 (字面量类型)。</li>
 </ul>
 </div>
+<h3 id="类型兼容性" tabindex="-1"><a class="header-anchor" href="#类型兼容性" aria-hidden="true">#</a> 类型兼容性</h3>
 </div></template>
 
 
