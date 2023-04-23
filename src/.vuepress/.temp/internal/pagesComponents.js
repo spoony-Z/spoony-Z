@@ -13,6 +13,12 @@ export const pagesComponents = {
   "v-200b415c": defineAsyncComponent(() => import(/* webpackChunkName: "v-200b415c" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/npm-tool/npm上传包.html.vue")),
   // path: /npm-tool/rimraf.html
   "v-7ec14f5c": defineAsyncComponent(() => import(/* webpackChunkName: "v-7ec14f5c" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/npm-tool/rimraf.html.vue")),
+  // path: /software-installation/IDEA%E5%AE%89%E8%A3%85.html
+  "v-6aea5eee": defineAsyncComponent(() => import(/* webpackChunkName: "v-6aea5eee" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/IDEA安装.html.vue")),
+  // path: /software-installation/IDEA%E7%9A%84%E4%BD%BF%E7%94%A8.html
+  "v-1242d0e0": defineAsyncComponent(() => import(/* webpackChunkName: "v-1242d0e0" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/IDEA的使用.html.vue")),
+  // path: /software-installation/MySql%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html
+  "v-b8be1f04": defineAsyncComponent(() => import(/* webpackChunkName: "v-b8be1f04" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/MySql安装教程.html.vue")),
   // path: /vue-template-list/fantastic-admin.html
   "v-7c03131a": defineAsyncComponent(() => import(/* webpackChunkName: "v-7c03131a" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/vue-template-list/fantastic-admin.html.vue")),
   // path: /vue-template-list/gin-vue-admin.html
@@ -39,12 +45,6 @@ export const pagesComponents = {
   "v-7c3f7418": defineAsyncComponent(() => import(/* webpackChunkName: "v-7c3f7418" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/vue-template-list/vue3-antd-admin.html.vue")),
   // path: /vue-template-list/vue3-composition-admin.html
   "v-7e07386f": defineAsyncComponent(() => import(/* webpackChunkName: "v-7e07386f" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/vue-template-list/vue3-composition-admin.html.vue")),
-  // path: /software-installation/IDEA%E5%AE%89%E8%A3%85.html
-  "v-6aea5eee": defineAsyncComponent(() => import(/* webpackChunkName: "v-6aea5eee" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/IDEA安装.html.vue")),
-  // path: /software-installation/IDEA%E7%9A%84%E4%BD%BF%E7%94%A8.html
-  "v-1242d0e0": defineAsyncComponent(() => import(/* webpackChunkName: "v-1242d0e0" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/IDEA的使用.html.vue")),
-  // path: /software-installation/MySql%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html
-  "v-b8be1f04": defineAsyncComponent(() => import(/* webpackChunkName: "v-b8be1f04" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/MySql安装教程.html.vue")),
   // path: /zh/intro.html
   "v-858cfdd6": defineAsyncComponent(() => import(/* webpackChunkName: "v-858cfdd6" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/zh/intro.html.vue")),
   // path: /zh/page.html
@@ -83,8 +83,6 @@ export const pagesComponents = {
   "v-18a9f2a7": defineAsyncComponent(() => import(/* webpackChunkName: "v-18a9f2a7" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/vue/基于element-ui二次封装表格.html.vue")),
   // path: /development-notes/vue/%E5%B0%81%E8%A3%85%E7%BB%84%E4%BB%B6%E4%BD%BF%E7%94%A8v-model%E4%BC%A0%E9%80%92%E5%80%BC.html
   "v-c48744e4": defineAsyncComponent(() => import(/* webpackChunkName: "v-c48744e4" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/vue/封装组件使用v-model传递值.html.vue")),
-  // path: /learning-notes/vue/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html
-  "v-b0967778": defineAsyncComponent(() => import(/* webpackChunkName: "v-b0967778" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/vue/创建项目.html.vue")),
   // path: /learning-notes/java/intro.html
   "v-44271714": defineAsyncComponent(() => import(/* webpackChunkName: "v-44271714" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/intro.html.vue")),
   // path: /learning-notes/java/sumUp.html
@@ -97,6 +95,8 @@ export const pagesComponents = {
   "v-15f3a468": defineAsyncComponent(() => import(/* webpackChunkName: "v-15f3a468" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/TypeScript/TypeScript高级类型.html.vue")),
   // path: /learning-notes/TypeScript/%E5%88%9D%E4%BD%93%E9%AA%8C.html
   "v-2e8a1b87": defineAsyncComponent(() => import(/* webpackChunkName: "v-2e8a1b87" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/TypeScript/初体验.html.vue")),
+  // path: /learning-notes/vue/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html
+  "v-b0967778": defineAsyncComponent(() => import(/* webpackChunkName: "v-b0967778" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/vue/创建项目.html.vue")),
   // path: /learning-notes/java/intermediate/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%AD%E7%BA%A7.html
   "v-23d83276": defineAsyncComponent(() => import(/* webpackChunkName: "v-23d83276" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/intermediate/面向对象中级.html.vue")),
   // path: /learning-notes/java/primary/DOS%E5%91%BD%E4%BB%A4%E4%BA%86%E8%A7%A3.html
@@ -129,10 +129,10 @@ export const pagesComponents = {
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/404.html.vue")),
   // path: /npm-tool/
   "v-00707d48": defineAsyncComponent(() => import(/* webpackChunkName: "v-00707d48" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/npm-tool/index.html.vue")),
-  // path: /vue-template-list/
-  "v-3e61ee1e": defineAsyncComponent(() => import(/* webpackChunkName: "v-3e61ee1e" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/vue-template-list/index.html.vue")),
   // path: /software-installation/
   "v-6c6b6470": defineAsyncComponent(() => import(/* webpackChunkName: "v-6c6b6470" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/index.html.vue")),
+  // path: /vue-template-list/
+  "v-3e61ee1e": defineAsyncComponent(() => import(/* webpackChunkName: "v-3e61ee1e" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/vue-template-list/index.html.vue")),
   // path: /development-notes/Javascript/
   "v-488324ee": defineAsyncComponent(() => import(/* webpackChunkName: "v-488324ee" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/Javascript/index.html.vue")),
   // path: /development-notes/recat/
@@ -141,14 +141,14 @@ export const pagesComponents = {
   "v-7a82c3e5": defineAsyncComponent(() => import(/* webpackChunkName: "v-7a82c3e5" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/uniapp/index.html.vue")),
   // path: /development-notes/vue/
   "v-a77c6ffc": defineAsyncComponent(() => import(/* webpackChunkName: "v-a77c6ffc" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/vue/index.html.vue")),
-  // path: /learning-notes/vue/
-  "v-6ac3446d": defineAsyncComponent(() => import(/* webpackChunkName: "v-6ac3446d" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/vue/index.html.vue")),
-  // path: /learning-notes/
-  "v-65eaff04": defineAsyncComponent(() => import(/* webpackChunkName: "v-65eaff04" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/index.html.vue")),
   // path: /learning-notes/java/
   "v-2619446e": defineAsyncComponent(() => import(/* webpackChunkName: "v-2619446e" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/index.html.vue")),
+  // path: /learning-notes/
+  "v-65eaff04": defineAsyncComponent(() => import(/* webpackChunkName: "v-65eaff04" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/index.html.vue")),
   // path: /learning-notes/TypeScript/
   "v-90290af4": defineAsyncComponent(() => import(/* webpackChunkName: "v-90290af4" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/TypeScript/index.html.vue")),
+  // path: /learning-notes/vue/
+  "v-6ac3446d": defineAsyncComponent(() => import(/* webpackChunkName: "v-6ac3446d" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/vue/index.html.vue")),
   // path: /learning-notes/java/intermediate/
   "v-aa7521a6": defineAsyncComponent(() => import(/* webpackChunkName: "v-aa7521a6" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/intermediate/index.html.vue")),
   // path: /learning-notes/java/primary/

@@ -219,6 +219,260 @@
 </ul>
 </div>
 <h3 id="类型兼容性" tabindex="-1"><a class="header-anchor" href="#类型兼容性" aria-hidden="true">#</a> 类型兼容性</h3>
+<blockquote>
+<p><strong>两种类型系统：</strong></p>
+<ul>
+<li>结构化类型系统：StructuralType System</li>
+<li>标明类型系统：Nominal Type System</li>
+<li>TS 采用的是结构化类型系统，也叫做ducktyping（鸭子类型），类型检查关注的是值所具有的形</li>
+</ul>
+</blockquote>
+<p><strong>类型的兼容性演示</strong></p>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">arr</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> [</span><span style="color: #98C379">&#39;a&#39;</span><span style="color: #ABB2BF">, </span><span style="color: #98C379">&#39;b&#39;</span><span style="color: #ABB2BF">, </span><span style="color: #98C379">&#39;c&#39;</span><span style="color: #ABB2BF">];</span></span>
+<span class="line"><span style="color: #E5C07B">arr</span><span style="color: #ABB2BF">.</span><span style="color: #61AFEF">forEach</span><span style="color: #ABB2BF">(</span><span style="color: #E06C75; font-style: italic">item</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> {});</span></span>
+<span class="line"><span style="color: #E5C07B">arr</span><span style="color: #ABB2BF">.</span><span style="color: #61AFEF">forEach</span><span style="color: #ABB2BF">((</span><span style="color: #E06C75; font-style: italic">item</span><span style="color: #ABB2BF">, </span><span style="color: #E06C75; font-style: italic">index</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> {});</span></span>
+<span class="line"><span style="color: #E5C07B">arr</span><span style="color: #ABB2BF">.</span><span style="color: #61AFEF">forEach</span><span style="color: #ABB2BF">((</span><span style="color: #E06C75; font-style: italic">item</span><span style="color: #ABB2BF">, </span><span style="color: #E06C75; font-style: italic">index</span><span style="color: #ABB2BF">, </span><span style="color: #E06C75; font-style: italic">array</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> {});</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>两个类的兼容性演示</strong></p>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">class</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Point</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">x</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">y</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"><span style="color: #C678DD">class</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Point2D</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">x</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">y</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"><span style="color: #C678DD">class</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Point3D</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">x</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">y</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">z</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">b</span><span style="color: #ABB2BF">:</span><span style="color: #E5C07B">Point</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">new</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">Point2D</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">c</span><span style="color: #ABB2BF">:</span><span style="color: #E5C07B">Point</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">new</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">Point3D</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">解释</p>
+<ul>
+<li>Point和 Point2D 是两个名称不同的类。</li>
+<li>变量 p 的类型被显示标注为 <strong>Point</strong> 类型，但是，它的值却是 <strong>Point2D</strong> 的实例，并且没有类型错误</li>
+<li>对于对象类型来说，<strong>y</strong> 的成员至少与 <strong>X</strong> 相同，则 <strong>x</strong> 兼容 <strong>y</strong> (成员多的可以赋值给少的)</li>
+<li>如果在 <strong>NominalType System</strong> 中(比如，C#、Java等)，它们是不同的类，类型无法兼容。</li>
+</ul>
+</div>
+<h3 id="接口之间的兼容性" tabindex="-1"><a class="header-anchor" href="#接口之间的兼容性" aria-hidden="true">#</a> 接口之间的兼容性</h3>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">interface</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Point</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">x</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">y</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"><span style="color: #C678DD">interface</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Point2D</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">x</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">y</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"><span style="color: #C678DD">interface</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Point3D</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">x</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">y</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">z</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">p1</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">Point</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">p2</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">Point2D</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">p3</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">Point3D</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #E06C75">p1</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">p2</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #E06C75">p2</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">p1</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #E06C75">p1</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">p3</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #E06C75">p3</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">p1</span><span style="color: #ABB2BF">; </span><span style="color: #7F848E; font-style: italic">// 报错</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 类和接口之间也是兼容的 */</span></span>
+<span class="line"><span style="color: #C678DD">class</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Point4D</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">x</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">y</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">z</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"><span style="color: #E06C75">p2</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">new</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">Point4D</span><span style="color: #ABB2BF">()</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="函数之间的兼容性" tabindex="-1"><a class="header-anchor" href="#函数之间的兼容性" aria-hidden="true">#</a> 函数之间的兼容性</h3>
+<blockquote>
+<p>比较复杂，需要考虑：</p>
+<ul>
+<li>参数个数：参数多的兼容参数少的(或者说，参数少的可以赋值给多的，类型兼容正好相反)</li>
+<li>参数类型：相同位置的参数类型要相同(原始类型)或兼容(对象类型)</li>
+<li>返回值类型：只关注返回值类型本身即可</li>
+</ul>
+</blockquote>
+<h4 id="_1-参数的个数兼容" tabindex="-1"><a class="header-anchor" href="#_1-参数的个数兼容" aria-hidden="true">#</a> <strong>1. 参数的个数兼容</strong></h4>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #ABB2BF"> </span><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">F1</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> (</span><span style="color: #E06C75; font-style: italic">a</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">void</span></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">F2</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> (</span><span style="color: #E06C75; font-style: italic">a</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">, </span><span style="color: #E06C75; font-style: italic">b</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">void</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f1</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">F1</span></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f2</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">F2</span></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f2</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f1</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f1</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f2</span><span style="color: #ABB2BF"> </span><span style="color: #7F848E; font-style: italic">// 错误</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">解释</p>
+<ul>
+<li>参数少的可以赋值给参数多的，所以，f1 可以赋值给f2.</li>
+<li>数组 <strong>forEach</strong> 方法的第一个参数是回调函数，该示例中类型为: <strong>(value: string,index: number,array: stringl)=&gt;void</strong></li>
+<li>在 JS 中省略用不到的函数参数实际上是很常见的，这样的使用方式，促成了 TS 中函数类型之间的兼容性。</li>
+<li>并且因为回调函数是有类型的，所以，TS 会自动推导出参数 <strong>item、index、array</strong> 的类型。</li>
+</ul>
+</div>
+<h4 id="_2-参数的参数类型" tabindex="-1"><a class="header-anchor" href="#_2-参数的参数类型" aria-hidden="true">#</a> <strong>2. 参数的参数类型</strong></h4>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #7F848E; font-style: italic">/**</span></span>
+<span class="line"><span style="color: #7F848E; font-style: italic"> * 参数类型相同</span></span>
+<span class="line"><span style="color: #7F848E; font-style: italic"> */</span></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">F1</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> (</span><span style="color: #E06C75; font-style: italic">a</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">void</span></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">F2</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> (</span><span style="color: #E06C75; font-style: italic">a</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">void</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f1</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">F1</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f2</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">F2</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #ABB2BF"> </span></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f1</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f2</span></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f2</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f1</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #7F848E; font-style: italic">/**</span></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">  * 参数类型不同</span></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">  */</span></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">F1</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> (</span><span style="color: #E06C75; font-style: italic">a</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">void</span></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">F2</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> (</span><span style="color: #E06C75; font-style: italic">a</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">string</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">void</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f1</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">F1</span><span style="color: #ABB2BF">; </span><span style="color: #7F848E; font-style: italic">// 错误</span></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f2</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">F2</span><span style="color: #ABB2BF">; </span><span style="color: #7F848E; font-style: italic">// 错误</span></span>
+<span class="line"><span style="color: #ABB2BF"> </span></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f1</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f2</span></span>
+<span class="line"><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f2</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f1</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">interface</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Point2D</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">x</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">y</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"><span style="color: #C678DD">interface</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Point3D</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">x</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">y</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">z</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">F1</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> (</span><span style="color: #E06C75; font-style: italic">p</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">Point2D</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">void</span><span style="color: #ABB2BF"> </span><span style="color: #7F848E; font-style: italic">// 相当于有 2 个参数</span></span>
+<span class="line"><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">F2</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> (</span><span style="color: #E06C75; font-style: italic">p</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">Point3D</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">void</span><span style="color: #ABB2BF"> </span><span style="color: #7F848E; font-style: italic">// 相当于有 3 个参数</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f2</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">F2</span></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f3</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">F3</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #E06C75">f3</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f2</span></span>
+<span class="line"><span style="color: #E06C75">f2</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f3</span><span style="color: #ABB2BF"> </span><span style="color: #7F848E; font-style: italic">// 错误 缺少属性 z</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container info">
+<p class="hint-container-title">技巧</p>
+<p>将对象拆开，把每个属性看做一个个参数，则，参数少的（ f2 ）可以赋值给参数多的 （ f3 ）</p>
+</div>
+<div class="hint-container tip">
+<p class="hint-container-title">解释</p>
+<p>函数兼容 F2 兼容函数类型 F1，因为 F1 和 F2 的第一个参数类型相同</p>
+</div>
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>此处与前面讲到的接口兼容性冲突</p>
+</div>
+<h4 id="_3-参数的返回值类型" tabindex="-1"><a class="header-anchor" href="#_3-参数的返回值类型" aria-hidden="true">#</a> 3. 参数的返回值类型</h4>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #7F848E; font-style: italic">/**</span></span>
+<span class="line"><span style="color: #7F848E; font-style: italic"> * 原始类型</span></span>
+<span class="line"><span style="color: #7F848E; font-style: italic"> */</span></span>
+<span class="line"><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">F5</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> () </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">string</span><span style="color: #ABB2BF"> </span></span>
+<span class="line"><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">F6</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> () </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">string</span><span style="color: #ABB2BF"> </span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f5</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">F5</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f6</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">F6</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #E06C75">f5</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f6</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #E06C75">f6</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f5</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/**</span></span>
+<span class="line"><span style="color: #7F848E; font-style: italic"> * 对象类型</span></span>
+<span class="line"><span style="color: #7F848E; font-style: italic"> */</span></span>
+<span class="line"><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">F7</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> () </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> { </span><span style="color: #E06C75">name</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">string</span><span style="color: #ABB2BF"> } </span></span>
+<span class="line"><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">F8</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> () </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> { </span><span style="color: #E06C75">name</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">string</span><span style="color: #ABB2BF">; </span><span style="color: #E06C75">age</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF"> }</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f7</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">F7</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f8</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">F8</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #E06C75">f7</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f8</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #E06C75">f8</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">f7</span><span style="color: #ABB2BF">; </span><span style="color: #7F848E; font-style: italic">// 报错 缺少属性 age</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">解释</p>
+<ol>
+<li>如果返回值类型是原始类型，此时两个类型要相同，比如，左侧类型 F5 和 F6</li>
+<li>如果返回值类型是对象类型，此时成员多的可以赋值给成员少的，比如，右侧类型 F7 和 F8。</li>
+</ol>
+</div>
+<h3 id="交叉类型" tabindex="-1"><a class="header-anchor" href="#交叉类型" aria-hidden="true">#</a> 交叉类型（&amp;）</h3>
+<blockquote>
+<p>功能类似于接口继承 ( extends )，用于组合多个类型为一个类型 (常用于对象类型)</p>
+</blockquote>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">interface</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Person</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">name</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">string</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #61AFEF">say</span><span style="color: #ABB2BF">(): </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"><span style="color: #C678DD">interface</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Contact</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">age</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">PersonDetail</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Person</span><span style="color: #ABB2BF"> &amp; </span><span style="color: #E5C07B">Contact</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">obj</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">PersonDetail</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">name</span><span style="color: #ABB2BF">: </span><span style="color: #98C379">&quot;yangshengjun&quot;</span><span style="color: #ABB2BF">，</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">age</span><span style="color: #ABB2BF">: </span><span style="color: #D19A66">18</span><span style="color: #ABB2BF">,</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #61AFEF">say</span><span style="color: #ABB2BF">(){ </span><span style="color: #C678DD">return</span><span style="color: #ABB2BF"> </span><span style="color: #D19A66">20</span><span style="color: #ABB2BF"> }</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">解释</p>
+<p>使用交叉类型后，新的类型 <strong>PersonDetail</strong> 就同时具备了 <strong>Person</strong> 和 <strong>Contact</strong> 的所有属性类型<br /></p>
+<ul>
+<li>相当于</li>
+</ul>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">PersonDetail</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> { </span><span style="color: #E06C75">name</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">string</span><span style="color: #ABB2BF">; </span><span style="color: #E06C75">phone</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">string</span><span style="color: #ABB2BF"> };</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div>
+<h3 id="交叉类型-和接口继承-extends-的对比" tabindex="-1"><a class="header-anchor" href="#交叉类型-和接口继承-extends-的对比" aria-hidden="true">#</a> 交叉类型（<strong>&amp;</strong>）和接口继承（<strong>extends</strong>）的对比</h3>
+<blockquote>
+<ul>
+<li><strong>相同点：</strong> 都可以实现对象类型的组合。</li>
+<li><strong>不同点：</strong> 两种方式实现类型组合对于同名属性之间，处理类型冲突的方式不同</li>
+</ul>
+</blockquote>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #7F848E; font-style: italic">/**</span></span>
+<span class="line"><span style="color: #7F848E; font-style: italic"> * 继承</span></span>
+<span class="line"><span style="color: #7F848E; font-style: italic"> * 以下继承会报错，value 参数类型不兼容</span></span>
+<span class="line"><span style="color: #7F848E; font-style: italic"> */</span></span>
+<span class="line"><span style="color: #C678DD">interface</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">A</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #61AFEF">fn</span><span style="color: #ABB2BF">: (</span><span style="color: #E06C75; font-style: italic">value</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">string</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"><span style="color: #C678DD">interface</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">B</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">extends</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">A</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #61AFEF">fn</span><span style="color: #ABB2BF">: (</span><span style="color: #E06C75; font-style: italic">value</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">string</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">string</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/**</span></span>
+<span class="line"><span style="color: #7F848E; font-style: italic"> * 交叉类型</span></span>
+<span class="line"><span style="color: #7F848E; font-style: italic"> */</span></span>
+<span class="line"><span style="color: #C678DD">interface</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">A</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #61AFEF">fn</span><span style="color: #ABB2BF">: (</span><span style="color: #E06C75; font-style: italic">value</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">string</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"><span style="color: #C678DD">interface</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">B</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #61AFEF">fn</span><span style="color: #ABB2BF">: (</span><span style="color: #E06C75; font-style: italic">value</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">string</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">string</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">C</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">A</span><span style="color: #ABB2BF"> &amp; </span><span style="color: #E5C07B">B</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">c</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">C</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #61AFEF">fn</span><span style="color: #ABB2BF">(</span><span style="color: #E06C75; font-style: italic">value</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF"> | </span><span style="color: #E5C07B">string</span><span style="color: #ABB2BF">){</span></span>
+<span class="line"><span style="color: #ABB2BF">        </span><span style="color: #C678DD">return</span><span style="color: #ABB2BF"> </span><span style="color: #98C379">&quot;返回字符串&quot;</span></span>
+<span class="line"><span style="color: #ABB2BF">    }</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 也可以直接调用 */</span></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">c</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">C</span><span style="color: #ABB2BF">;</span></span>
+<span class="line"><span style="color: #E5C07B">c</span><span style="color: #ABB2BF">.</span><span style="color: #61AFEF">fn</span><span style="color: #ABB2BF">(</span><span style="color: #D19A66">1</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"><span style="color: #E5C07B">c</span><span style="color: #ABB2BF">.</span><span style="color: #61AFEF">fn</span><span style="color: #ABB2BF">(</span><span style="color: #98C379">&quot;2&quot;</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container info">
+<p class="hint-container-title">说明</p>
+<p>以上代码，接口继承会报错(类型不兼容)；交叉类型没有错误，可以简单的理解为:</p>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #ABB2BF">fn: (</span><span style="color: #E06C75; font-style: italic">value</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">string</span><span style="color: #ABB2BF"> | </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">string</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div>
+<h3 id="泛型" tabindex="-1"><a class="header-anchor" href="#泛型" aria-hidden="true">#</a> 泛型</h3>
+<h4 id="基本使用" tabindex="-1"><a class="header-anchor" href="#基本使用" aria-hidden="true">#</a> 基本使用</h4>
 </div></template>
 
 

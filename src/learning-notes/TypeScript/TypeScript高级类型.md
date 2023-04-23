@@ -230,3 +230,267 @@ class Person2 {
 :::
 
 ### 类型兼容性
+> **两种类型系统：**
+> - 结构化类型系统：StructuralType System 
+> - 标明类型系统：Nominal Type System
+> - TS 采用的是结构化类型系统，也叫做ducktyping（鸭子类型），类型检查关注的是值所具有的形
+
+**类型的兼容性演示**
+```typescript
+let arr = ['a', 'b', 'c'];
+arr.forEach(item => {});
+arr.forEach((item, index) => {});
+arr.forEach((item, index, array) => {});
+```
+
+**两个类的兼容性演示**
+```typescript
+class Point {
+    x: number
+    y: number
+}
+class Point2D {
+    x: number
+    y: number
+}
+class Point3D {
+    x: number
+    y: number
+    z: number
+}
+let b:Point = new Point2D;
+let c:Point = new Point3D;
+```
+
+:::tip 解释
+- Point和 Point2D 是两个名称不同的类。
+- 变量 p 的类型被显示标注为 **Point** 类型，但是，它的值却是 **Point2D** 的实例，并且没有类型错误
+- 对于对象类型来说，**y** 的成员至少与 **X** 相同，则 **x** 兼容 **y** (成员多的可以赋值给少的)
+- 如果在 **NominalType System** 中(比如，C#、Java等)，它们是不同的类，类型无法兼容。
+:::
+
+### 接口之间的兼容性
+```typescript
+interface Point {
+    x: number
+    y: number
+}
+interface Point2D {
+    x: number
+    y: number
+}
+interface Point3D {
+    x: number
+    y: number
+    z: number
+}
+let p1: Point;
+let p2: Point2D;
+let p3: Point3D;
+
+p1 = p2;
+p2 = p1;
+p1 = p3;
+p3 = p1; // 报错
+
+/** 类和接口之间也是兼容的 */
+class Point4D {
+    x: number
+    y: number
+    z: number
+}
+p2 = new Point4D()
+```
+
+### 函数之间的兼容性
+
+> 比较复杂，需要考虑：
+> - 参数个数：参数多的兼容参数少的(或者说，参数少的可以赋值给多的，类型兼容正好相反)
+> - 参数类型：相同位置的参数类型要相同(原始类型)或兼容(对象类型)
+> - 返回值类型：只关注返回值类型本身即可
+
+#### **1. 参数的个数兼容**
+```typescript
+ type F1 = (a: number) => void
+ type F2 = (a: number, b: number) => void
+
+ let f1: F1
+ let f2: F2
+ f2 = f1;
+ f1 = f2 // 错误
+```
+:::tip 解释
+- 参数少的可以赋值给参数多的，所以，f1 可以赋值给f2.
+- 数组 **forEach** 方法的第一个参数是回调函数，该示例中类型为: **(value: string,index: number,array: stringl)=>void**
+- 在 JS 中省略用不到的函数参数实际上是很常见的，这样的使用方式，促成了 TS 中函数类型之间的兼容性。
+- 并且因为回调函数是有类型的，所以，TS 会自动推导出参数 **item、index、array** 的类型。
+:::
+
+#### **2. 参数的参数类型**
+
+```typescript
+/**
+ * 参数类型相同
+ */
+ type F1 = (a: number) => void
+ type F2 = (a: number) => void
+
+ let f1: F1;
+ let f2: F2;
+ 
+ f1 = f2
+ f2 = f1
+
+ /**
+  * 参数类型不同
+  */
+ type F1 = (a: number) => void
+ type F2 = (a: string) => void
+
+ let f1: F1; // 错误
+ let f2: F2; // 错误
+ 
+ f1 = f2
+ f2 = f1
+```
+
+```typescript
+interface Point2D {
+    x: number
+    y: number
+}
+interface Point3D {
+    x: number
+    y: number
+    z: number
+}
+
+type F1 = (p: Point2D) => void // 相当于有 2 个参数
+type F2 = (p: Point3D) => void // 相当于有 3 个参数
+
+let f2: F2
+let f3: F3
+
+f3 = f2
+f2 = f3 // 错误 缺少属性 z
+```
+
+:::info 技巧
+将对象拆开，把每个属性看做一个个参数，则，参数少的（ f2 ）可以赋值给参数多的 （ f3 ）
+:::
+:::tip 解释
+函数兼容 F2 兼容函数类型 F1，因为 F1 和 F2 的第一个参数类型相同
+:::
+
+:::warning 注意
+此处与前面讲到的接口兼容性冲突
+:::
+
+#### 3. 参数的返回值类型
+```typescript
+/**
+ * 原始类型
+ */
+type F5 = () => string 
+type F6 = () => string 
+
+let f5: F5;
+let f6: F6;
+
+f5 = f6;
+f6 = f5;
+
+/**
+ * 对象类型
+ */
+type F7 = () => { name: string } 
+type F8 = () => { name: string; age: number }
+
+
+let f7: F7;
+let f8: F8;
+
+f7 = f8;
+f8 = f7; // 报错 缺少属性 age
+```
+:::tip 解释
+1. 如果返回值类型是原始类型，此时两个类型要相同，比如，左侧类型 F5 和 F6
+2. 如果返回值类型是对象类型，此时成员多的可以赋值给成员少的，比如，右侧类型 F7 和 F8。
+:::
+
+### 交叉类型（&）
+> 功能类似于接口继承 ( extends )，用于组合多个类型为一个类型 (常用于对象类型)
+```typescript
+interface Person {
+    name: string
+    say(): number
+}
+interface Contact {
+    age: number
+}
+
+type PersonDetail = Person & Contact;
+
+let obj: PersonDetail = {
+    name: "yangshengjun"，
+    age: 18,
+    say(){ return 20 }
+}
+```
+:::tip 解释
+使用交叉类型后，新的类型 **PersonDetail** 就同时具备了 **Person** 和 **Contact** 的所有属性类型<br />
+- 相当于
+```typescript
+type PersonDetail = { name: string; phone: string };
+```
+:::
+
+### 交叉类型（**&**）和接口继承（**extends**）的对比
+> - **相同点：** 都可以实现对象类型的组合。
+> - **不同点：** 两种方式实现类型组合对于同名属性之间，处理类型冲突的方式不同
+```typescript
+/**
+ * 继承
+ * 以下继承会报错，value 参数类型不兼容
+ */
+interface A {
+fn: (value: number) => string
+}
+interface B extends A {
+fn: (value: string) => string
+}
+
+/**
+ * 交叉类型
+ */
+interface A {
+fn: (value: number) => string
+}
+interface B {
+fn: (value: string) => string
+}
+
+type C = A & B
+
+let c: C = {
+    fn(value: number | string){
+        return "返回字符串"
+    }
+}
+
+/** 也可以直接调用 */
+let c: C;
+c.fn(1);
+c.fn("2");
+```
+:::info 说明
+以上代码，接口继承会报错(类型不兼容)；交叉类型没有错误，可以简单的理解为:
+
+```typescript
+fn: (value: string | number) => string
+```
+:::
+ 
+
+ ### 泛型
+ #### 基本使用
