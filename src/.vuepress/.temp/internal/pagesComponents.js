@@ -87,8 +87,6 @@ export const pagesComponents = {
   "v-44271714": defineAsyncComponent(() => import(/* webpackChunkName: "v-44271714" */"C:/Users/admin/Desktop/vuePress/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/intro.html.vue")),
   // path: /learning-notes/java/sumUp.html
   "v-b9bc5e48": defineAsyncComponent(() => import(/* webpackChunkName: "v-b9bc5e48" */"C:/Users/admin/Desktop/vuePress/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/sumUp.html.vue")),
-  // path: /learning-notes/vue/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html
-  "v-b0967778": defineAsyncComponent(() => import(/* webpackChunkName: "v-b0967778" */"C:/Users/admin/Desktop/vuePress/spoony-z/src/.vuepress/.temp/pages/learning-notes/vue/创建项目.html.vue")),
   // path: /learning-notes/TypeScript/TypeScript%E5%9F%BA%E7%A1%80.html
   "v-36799354": defineAsyncComponent(() => import(/* webpackChunkName: "v-36799354" */"C:/Users/admin/Desktop/vuePress/spoony-z/src/.vuepress/.temp/pages/learning-notes/TypeScript/TypeScript基础.html.vue")),
   // path: /learning-notes/TypeScript/TypeScript%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B.html
@@ -97,6 +95,8 @@ export const pagesComponents = {
   "v-15f3a468": defineAsyncComponent(() => import(/* webpackChunkName: "v-15f3a468" */"C:/Users/admin/Desktop/vuePress/spoony-z/src/.vuepress/.temp/pages/learning-notes/TypeScript/TypeScript高级类型.html.vue")),
   // path: /learning-notes/TypeScript/%E5%88%9D%E4%BD%93%E9%AA%8C.html
   "v-2e8a1b87": defineAsyncComponent(() => import(/* webpackChunkName: "v-2e8a1b87" */"C:/Users/admin/Desktop/vuePress/spoony-z/src/.vuepress/.temp/pages/learning-notes/TypeScript/初体验.html.vue")),
+  // path: /learning-notes/vue/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html
+  "v-b0967778": defineAsyncComponent(() => import(/* webpackChunkName: "v-b0967778" */"C:/Users/admin/Desktop/vuePress/spoony-z/src/.vuepress/.temp/pages/learning-notes/vue/创建项目.html.vue")),
   // path: /learning-notes/java/intermediate/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%AD%E7%BA%A7.html
   "v-23d83276": defineAsyncComponent(() => import(/* webpackChunkName: "v-23d83276" */"C:/Users/admin/Desktop/vuePress/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/intermediate/面向对象中级.html.vue")),
   // path: /learning-notes/java/primary/DOS%E5%91%BD%E4%BB%A4%E4%BA%86%E8%A7%A3.html
@@ -145,10 +145,10 @@ export const pagesComponents = {
   "v-2619446e": defineAsyncComponent(() => import(/* webpackChunkName: "v-2619446e" */"C:/Users/admin/Desktop/vuePress/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/index.html.vue")),
   // path: /learning-notes/
   "v-65eaff04": defineAsyncComponent(() => import(/* webpackChunkName: "v-65eaff04" */"C:/Users/admin/Desktop/vuePress/spoony-z/src/.vuepress/.temp/pages/learning-notes/index.html.vue")),
-  // path: /learning-notes/vue/
-  "v-6ac3446d": defineAsyncComponent(() => import(/* webpackChunkName: "v-6ac3446d" */"C:/Users/admin/Desktop/vuePress/spoony-z/src/.vuepress/.temp/pages/learning-notes/vue/index.html.vue")),
   // path: /learning-notes/TypeScript/
   "v-90290af4": defineAsyncComponent(() => import(/* webpackChunkName: "v-90290af4" */"C:/Users/admin/Desktop/vuePress/spoony-z/src/.vuepress/.temp/pages/learning-notes/TypeScript/index.html.vue")),
+  // path: /learning-notes/vue/
+  "v-6ac3446d": defineAsyncComponent(() => import(/* webpackChunkName: "v-6ac3446d" */"C:/Users/admin/Desktop/vuePress/spoony-z/src/.vuepress/.temp/pages/learning-notes/vue/index.html.vue")),
   // path: /learning-notes/java/intermediate/
   "v-aa7521a6": defineAsyncComponent(() => import(/* webpackChunkName: "v-aa7521a6" */"C:/Users/admin/Desktop/vuePress/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/intermediate/index.html.vue")),
   // path: /learning-notes/java/primary/
