@@ -3,9 +3,9 @@ order: 4
 ---
 # TypeScript高级类型
 
-## class 类
+## 一、class 类
 
-### 介绍
+### 1. 介绍
 **Typescript** 全面支持 ES2015 中引入的 **class** 关键字，并为其添加了类型注解和其他语法(比如，可见性修饰符等)
 ```typescript
 /** 
@@ -23,7 +23,7 @@ class Person {
 const p = new Person();
 ```
 
-### 构造函数
+## 二、构造函数
 
 ```typescript
 class Person {
@@ -45,7 +45,7 @@ console.log(p.age, p.gender);
 3. 需要为构造函数指定类型注解，否则会被隐式推断为any；构造函数不需要返回值类型
 :::
 
-### 实例方法
+## 三、实例方法
 ```typescript
 class Point{
     x = 1;
@@ -63,13 +63,9 @@ console.log(p.x, p.y);
 方法的类型注解(参数和返回值)与函数用法相同。
 :::
 
-### class 的继承
-**两种方式：** 
-- **extends** （继承父类）
-- **implements**（实现接口）
+## 四、class 的继承
 > **说明：** JS 中只有 **extends**，而 **implements** 是TS 提供的
-
-#### **使用 extends 继承**
+### **1. 使用 extends 继承**
 ```typescript
 class Animal {
     move(){
@@ -91,7 +87,7 @@ d.bark();
 - 子类 Dog 继承父类 Animal，则 Dog 的实例对象dog 就同时具有了父类 Animal 和子类 Dog 的所有属性和方法
 :::
 
-#### **使用 implements 继承**
+### **2. 使用 implements 继承**
 ```typescript
 interface Singable {
     sing(): void
@@ -108,9 +104,9 @@ class Person implements Singabl {
 - **Person** 类实现接口 **Singable** 意味着，**Person** 类中必须提供 **Singable** 接口中指定的所有方法和属性
 :::
 
-### class 的修饰符
+## 五、class 的修饰符
 
-#### **public(公有的)**
+### **1. public(公有的)**
 
 > 表示公有的、公开的，公有成员可以被任何地方访问，默认可见性
 
@@ -135,7 +131,7 @@ d.bark();
 - 因为 **public** 是默认可见性，所以，可以直接省略。
 :::
 
-#### **protected**
+### **2. protected**
 > 表示受保护的，仅对其声明所在类和子类中(非实例对象)可见
 ```typescript
 class Animal {
@@ -165,7 +161,7 @@ d.bark();
 - 在子类的方法内部可以通过 **this** 来访问父类中受保护的成员，但是，**对实例不可见**!
 :::
 
-#### **private**
+### **3. private**
 
 > 表示私有的，只在当前类中可见，对实例对象以及子类也是不可见的
 
@@ -197,7 +193,7 @@ d.bark();
 - 私有的属性或方法只在当前类中可见，对子类和实例对象也都是不可见的!
 :::
 
-#### **readonly(只读)**
+### **4. readonly(只读)**
 
 > 表示只读，用来防止在构造函数之外对属性进行赋值
 
@@ -229,7 +225,7 @@ class Person2 {
 - 属性 **age** 后面的类型注解(比如，此处的 **number** ) 如果不加，则 **age** 的类型为 18 (字面量类型)。
 :::
 
-### 类型兼容性
+## 六、类型兼容性
 > **两种类型系统：**
 > - 结构化类型系统：StructuralType System 
 > - 标明类型系统：Nominal Type System
@@ -269,7 +265,7 @@ let c:Point = new Point3D;
 - 如果在 **NominalType System** 中(比如，C#、Java等)，它们是不同的类，类型无法兼容。
 :::
 
-### 接口之间的兼容性
+## 七、接口之间的兼容性
 ```typescript
 interface Point {
     x: number
@@ -302,14 +298,14 @@ class Point4D {
 p2 = new Point4D()
 ```
 
-### 函数之间的兼容性
+## 八、函数之间的兼容性
 
 > 比较复杂，需要考虑：
 > - 参数个数：参数多的兼容参数少的(或者说，参数少的可以赋值给多的，类型兼容正好相反)
 > - 参数类型：相同位置的参数类型要相同(原始类型)或兼容(对象类型)
 > - 返回值类型：只关注返回值类型本身即可
 
-#### **1. 参数的个数兼容**
+### **1. 参数的个数兼容**
 ```typescript
  type F1 = (a: number) => void
  type F2 = (a: number, b: number) => void
@@ -326,7 +322,7 @@ p2 = new Point4D()
 - 并且因为回调函数是有类型的，所以，TS 会自动推导出参数 **item、index、array** 的类型。
 :::
 
-#### **2. 参数的参数类型**
+### **2. 参数的参数类型**
 
 ```typescript
 /**
@@ -386,7 +382,7 @@ f2 = f3 // 错误 缺少属性 z
 此处与前面讲到的接口兼容性冲突
 :::
 
-#### 3. 参数的返回值类型
+### 3. 参数的返回值类型
 ```typescript
 /**
  * 原始类型
@@ -418,7 +414,7 @@ f8 = f7; // 报错 缺少属性 age
 2. 如果返回值类型是对象类型，此时成员多的可以赋值给成员少的，比如，右侧类型 F7 和 F8。
 :::
 
-### 交叉类型（&）
+## 九、交叉类型（&）
 > 功能类似于接口继承 ( extends )，用于组合多个类型为一个类型 (常用于对象类型)
 ```typescript
 interface Person {
@@ -445,7 +441,7 @@ type PersonDetail = { name: string; phone: string };
 ```
 :::
 
-### 交叉类型（**&**）和接口继承（**extends**）的对比
+## 十、交叉类型（**&**）和接口继承（**extends**）的对比
 > - **相同点：** 都可以实现对象类型的组合。
 > - **不同点：** 两种方式实现类型组合对于同名属性之间，处理类型冲突的方式不同
 ```typescript
@@ -492,5 +488,148 @@ fn: (value: string | number) => string
 :::
  
 
- ### 泛型
- #### 基本使用
+ ## 十一、泛型
+ ### 1. 介绍
+ > 泛型是可以在保证类型安全前提下，让函数等与多种类型一起工作，从而实现复用，常用于:**函数、接口、class** 中
+ > **需求：** 创建一个 id 函数，传入什么数据就返回该数据本身(也就是说，参数和返回值类型相同)。
+ ### 2. 基本使用
+ > 创建泛型
+ ```typescript
+ function id<Type>(value: Type): Type { return value }
+ ```
+
+:::tip 解释
+- 1. **语法：** 在函数名称的后面添加<>(尖括号)，尖括号中添加类型变量，比如此处的**Type**。
+- 2. **类型变量 Type，** 是一种特殊类型的变量，它处理类型而不是值。
+- 3. 该类型变量相当于一个类型容器，能够捕获用户提供的类型（具体是什么类型由用户调用该函数时指定）
+- 4. 因为 **Type** 是类型，因此可以将其作为函数参数和返回值的类型，表示参数和返回值具有相同的类型。
+- 5. 类型变量 **Type**，可以是任意合法的变量名称
+:::
+
+### 3. 代码演示
+```typescript
+/** 使用泛型创建函数 */
+function id<Type>(value: Type): Type{
+    return value
+}
+
+/** 调用泛型函数 */
+
+/** 1. 以 number 类型调用泛型函数 */
+const num = id<number>(10);
+
+/** 2. 以 string 类型调用泛型函数 */
+const str = id<string>("abc");
+
+/** 3. 以 boolean 类型调用泛型函数 */
+const ret = id<boolean>(false);
+```
+:::tip
+- 1. 语法: 在函数名称的后面添加 **<>** (尖括号)，尖括号中指定具体的类型，比如，此处的 **number**。
+- 2. 当传入类型 **number** 后，这个类型就会被函数声明时指定的类型变量 **Type** 捕获到。 
+- 3. 此时，**Type** 的类型就是 **number**，所以，函数 id 参数和返回值的类型也都是 **number**。<br />
+这样，通过泛型就做到了让id 函数与多种不同的类型一起工作，实现了复用的同时保证了类型安全。
+:::
+
+### 4. 简化调用泛型函数
+
+```typescript
+/** 使用泛型创建函数 */
+function id<Type>(value: Type): Type{
+    return value
+}
+
+/** 调用泛型函数 */
+
+/** 1. 以 number 类型调用泛型函数 */
+const num = id(10);
+
+/** 2. 以 string 类型调用泛型函数 */
+const str = id("abc");
+
+/** 3. 以 boolean 类型调用泛型函数 */
+const ret = id(false);
+```
+:::tip 解释
+- 1. 在调用泛型函数时，可以省略 <类型> 来简化泛型函数的调用
+- 2. TS 内部会采用一种叫做类型参数推断的机制，来根据传入的实参自动推断出类型变量 **Type** 的类型。
+- 3. 比如，传入实参10，TS 会自动推断出变量 num 的类型 **number**，并作为 **Type** 的类型
+- 4. 推荐：使用这种简化的方式调用泛型函数，使代码更短，更易于阅读
+:::
+::: info 说明
+当编译器无法推断类型或者推断的类型不准确时，就需要显式地传入类型参数
+:::
+
+### 5. 泛型约束
+
+> 默认情况下，泛型函数的类型变量 **Type** 可以代表多个类型，这导致无法访问任何属性。比如，id(a) 调用函数时获取参数的长度
+> 添加泛型约束收缩类型主要有以下两种方式
+#### **(1). 指定更加具体的类型**
+```typescript
+/** 泛型约束 给参数添加具体的类型 */
+function id<Type>(value: Type[]): Type[]{
+    console.log(value.length);
+    return value
+}
+
+```
+:::tip 解释
+**Type** 可以代表任意类型，无法保证一定存在 **length** 属性，比如 number 类型就没有 **length**。
+此时，就需要为泛型添加约束来收缩类型(缩窄类型取值范围)
+:::
+
+#### (2). **添加约束**
+```typescript
+interface ILength {
+    length: number
+}
+
+function id<Type extends TLength>(value: Type): Type{
+    console.log(value.length)
+    return value
+}
+
+id(['a', 'b']); // 数组中有 length 属性
+id("abcdef"); // 字符串中有 length 属性
+id({length: 10, name: 'jack'}) // 对象中可以传入length 属性就不会报错
+id(10); // 报错
+```
+:::tip 解释
+- 1. 创建描述约束的接口 **ILength**，该接口要求提供 **length** 属性
+- 2. 通过 **extends** 关键字使用该接口，为泛（类型变量）添加约束
+- 3. 该约束表示：传入的类型必须具有 **length** 属性
+:::
+
+:::warning 注意！
+传入的实参(比如，数组)只要有 **length** 属性即可，这也符合前面讲到的接口的类型兼容性
+:::
+
+#### **(3). 类型变量之间的约束**
+> 泛型的类型变量可以有多个，并且类型变量之间还可以约束(比如，第二个类型变量受第一个类型变量约束)比如，创建一个函数来获取对象中属性的值:
+```typescript
+/** keyof 关键值是获取他后面类型的键值，从而约束第二个参数key的类型 */
+function getProp<Type, Key extends keyof Type>(obj: Type, key: Key){
+    return obj[key]
+}
+
+let person = { name: "yangshengjun", age: 18 };
+
+getProp(person, 'name');
+getProp(person, 'age');
+getProp(person, 'gender'); // 报错，person 对象中没有 gender，因为 keyof 获取不到
+
+getProp(18, 'toFixed');
+getProp('abc', 'split');
+getProp('abc', 1); // 1 表示 'abc' 字符串的索引
+getProp('abc', 'length');
+getProp(['a', 'b'], 'length');
+console.log('abcd'[1]) // 字符串也有索引
+```
+:::tip 解释
+- 1. 添加了第二个类型变量 Key，两个类型变量之间使用 (,)逗号分隔
+- 2. **keyof** 关键字接收一个对象类型，生成其键名称 (可能是字符串或数字)的联合类型。
+- 3. 本示例中 **keyof Type** 实际上获取的是 **person** 对象所有键的联合类型，也就是: 'name'|'age'
+- 4. 类型变量 **Key** 受 **Type** 约束，可以理解为: **Key** 只能是 **Type** 所有键中的任意一个，或者说只能访问对象中存在的属性。
+:::
+
+### 泛型接口

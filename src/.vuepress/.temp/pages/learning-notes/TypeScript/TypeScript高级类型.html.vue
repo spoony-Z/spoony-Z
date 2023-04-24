@@ -1,6 +1,6 @@
 <template><div><h1 id="typescript高级类型" tabindex="-1"><a class="header-anchor" href="#typescript高级类型" aria-hidden="true">#</a> TypeScript高级类型</h1>
-<h2 id="class-类" tabindex="-1"><a class="header-anchor" href="#class-类" aria-hidden="true">#</a> class 类</h2>
-<h3 id="介绍" tabindex="-1"><a class="header-anchor" href="#介绍" aria-hidden="true">#</a> 介绍</h3>
+<h2 id="一、class-类" tabindex="-1"><a class="header-anchor" href="#一、class-类" aria-hidden="true">#</a> 一、class 类</h2>
+<h3 id="_1-介绍" tabindex="-1"><a class="header-anchor" href="#_1-介绍" aria-hidden="true">#</a> 1. 介绍</h3>
 <p><strong>Typescript</strong> 全面支持 ES2015 中引入的 <strong>class</strong> 关键字，并为其添加了类型注解和其他语法(比如，可见性修饰符等)</p>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #7F848E; font-style: italic">/** </span></span>
 <span class="line"><span style="color: #7F848E; font-style: italic"> * 基本使用 </span></span>
@@ -15,7 +15,7 @@
 <span class="line"></span>
 <span class="line"><span style="color: #7F848E; font-style: italic">/** 此时 p 的类型为 Person */</span></span>
 <span class="line"><span style="color: #C678DD">const</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">p</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">new</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">Person</span><span style="color: #ABB2BF">();</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="构造函数" tabindex="-1"><a class="header-anchor" href="#构造函数" aria-hidden="true">#</a> 构造函数</h3>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="二、构造函数" tabindex="-1"><a class="header-anchor" href="#二、构造函数" aria-hidden="true">#</a> 二、构造函数</h2>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">class</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Person</span><span style="color: #ABB2BF"> {</span></span>
 <span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">age</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
 <span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">gender</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">string</span></span>
@@ -36,7 +36,7 @@
 <li>需要为构造函数指定类型注解，否则会被隐式推断为any；构造函数不需要返回值类型</li>
 </ol>
 </div>
-<h3 id="实例方法" tabindex="-1"><a class="header-anchor" href="#实例方法" aria-hidden="true">#</a> 实例方法</h3>
+<h2 id="三、实例方法" tabindex="-1"><a class="header-anchor" href="#三、实例方法" aria-hidden="true">#</a> 三、实例方法</h2>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">class</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Point</span><span style="color: #ABB2BF">{</span></span>
 <span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">x</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #D19A66">1</span><span style="color: #ABB2BF">;</span></span>
 <span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">y</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #D19A66">2</span><span style="color: #ABB2BF">;</span></span>
@@ -52,16 +52,11 @@
 <p class="hint-container-title">解释</p>
 <p>方法的类型注解(参数和返回值)与函数用法相同。</p>
 </div>
-<h3 id="class-的继承" tabindex="-1"><a class="header-anchor" href="#class-的继承" aria-hidden="true">#</a> class 的继承</h3>
-<p><strong>两种方式：</strong></p>
-<ul>
-<li><strong>extends</strong> （继承父类）</li>
-<li><strong>implements</strong>（实现接口）</li>
-</ul>
+<h2 id="四、class-的继承" tabindex="-1"><a class="header-anchor" href="#四、class-的继承" aria-hidden="true">#</a> 四、class 的继承</h2>
 <blockquote>
 <p><strong>说明：</strong> JS 中只有 <strong>extends</strong>，而 <strong>implements</strong> 是TS 提供的</p>
 </blockquote>
-<h4 id="使用-extends-继承" tabindex="-1"><a class="header-anchor" href="#使用-extends-继承" aria-hidden="true">#</a> <strong>使用 extends 继承</strong></h4>
+<h3 id="_1-使用-extends-继承" tabindex="-1"><a class="header-anchor" href="#_1-使用-extends-继承" aria-hidden="true">#</a> <strong>1. 使用 extends 继承</strong></h3>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">class</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Animal</span><span style="color: #ABB2BF"> {</span></span>
 <span class="line"><span style="color: #ABB2BF">    </span><span style="color: #61AFEF">move</span><span style="color: #ABB2BF">(){</span></span>
 <span class="line"><span style="color: #ABB2BF">        </span><span style="color: #E5C07B">console</span><span style="color: #ABB2BF">.</span><span style="color: #61AFEF">log</span><span style="color: #ABB2BF">(</span><span style="color: #98C379">&quot;我是Animal类&quot;</span><span style="color: #ABB2BF">);</span></span>
@@ -82,7 +77,7 @@
 <li>子类 Dog 继承父类 Animal，则 Dog 的实例对象dog 就同时具有了父类 Animal 和子类 Dog 的所有属性和方法</li>
 </ul>
 </div>
-<h4 id="使用-implements-继承" tabindex="-1"><a class="header-anchor" href="#使用-implements-继承" aria-hidden="true">#</a> <strong>使用 implements 继承</strong></h4>
+<h3 id="_2-使用-implements-继承" tabindex="-1"><a class="header-anchor" href="#_2-使用-implements-继承" aria-hidden="true">#</a> <strong>2. 使用 implements 继承</strong></h3>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">interface</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Singable</span><span style="color: #ABB2BF"> {</span></span>
 <span class="line"><span style="color: #ABB2BF">    </span><span style="color: #61AFEF">sing</span><span style="color: #ABB2BF">(): </span><span style="color: #E5C07B">void</span></span>
 <span class="line"><span style="color: #ABB2BF">}</span></span>
@@ -98,8 +93,8 @@
 <li><strong>Person</strong> 类实现接口 <strong>Singable</strong> 意味着，<strong>Person</strong> 类中必须提供 <strong>Singable</strong> 接口中指定的所有方法和属性</li>
 </ul>
 </div>
-<h3 id="class-的修饰符" tabindex="-1"><a class="header-anchor" href="#class-的修饰符" aria-hidden="true">#</a> class 的修饰符</h3>
-<h4 id="public-公有的" tabindex="-1"><a class="header-anchor" href="#public-公有的" aria-hidden="true">#</a> <strong>public(公有的)</strong></h4>
+<h2 id="五、class-的修饰符" tabindex="-1"><a class="header-anchor" href="#五、class-的修饰符" aria-hidden="true">#</a> 五、class 的修饰符</h2>
+<h3 id="_1-public-公有的" tabindex="-1"><a class="header-anchor" href="#_1-public-公有的" aria-hidden="true">#</a> <strong>1. public(公有的)</strong></h3>
 <blockquote>
 <p>表示公有的、公开的，公有成员可以被任何地方访问，默认可见性</p>
 </blockquote>
@@ -123,7 +118,7 @@
 <li>因为 <strong>public</strong> 是默认可见性，所以，可以直接省略。</li>
 </ul>
 </div>
-<h4 id="protected" tabindex="-1"><a class="header-anchor" href="#protected" aria-hidden="true">#</a> <strong>protected</strong></h4>
+<h3 id="_2-protected" tabindex="-1"><a class="header-anchor" href="#_2-protected" aria-hidden="true">#</a> <strong>2. protected</strong></h3>
 <blockquote>
 <p>表示受保护的，仅对其声明所在类和子类中(非实例对象)可见</p>
 </blockquote>
@@ -154,7 +149,7 @@
 <li>在子类的方法内部可以通过 <strong>this</strong> 来访问父类中受保护的成员，但是，<strong>对实例不可见</strong>!</li>
 </ul>
 </div>
-<h4 id="private" tabindex="-1"><a class="header-anchor" href="#private" aria-hidden="true">#</a> <strong>private</strong></h4>
+<h3 id="_3-private" tabindex="-1"><a class="header-anchor" href="#_3-private" aria-hidden="true">#</a> <strong>3. private</strong></h3>
 <blockquote>
 <p>表示私有的，只在当前类中可见，对实例对象以及子类也是不可见的</p>
 </blockquote>
@@ -185,7 +180,7 @@
 <li>私有的属性或方法只在当前类中可见，对子类和实例对象也都是不可见的!</li>
 </ul>
 </div>
-<h4 id="readonly-只读" tabindex="-1"><a class="header-anchor" href="#readonly-只读" aria-hidden="true">#</a> <strong>readonly(只读)</strong></h4>
+<h3 id="_4-readonly-只读" tabindex="-1"><a class="header-anchor" href="#_4-readonly-只读" aria-hidden="true">#</a> <strong>4. readonly(只读)</strong></h3>
 <blockquote>
 <p>表示只读，用来防止在构造函数之外对属性进行赋值</p>
 </blockquote>
@@ -218,7 +213,7 @@
 <li>属性 <strong>age</strong> 后面的类型注解(比如，此处的 <strong>number</strong> ) 如果不加，则 <strong>age</strong> 的类型为 18 (字面量类型)。</li>
 </ul>
 </div>
-<h3 id="类型兼容性" tabindex="-1"><a class="header-anchor" href="#类型兼容性" aria-hidden="true">#</a> 类型兼容性</h3>
+<h2 id="六、类型兼容性" tabindex="-1"><a class="header-anchor" href="#六、类型兼容性" aria-hidden="true">#</a> 六、类型兼容性</h2>
 <blockquote>
 <p><strong>两种类型系统：</strong></p>
 <ul>
@@ -257,7 +252,7 @@
 <li>如果在 <strong>NominalType System</strong> 中(比如，C#、Java等)，它们是不同的类，类型无法兼容。</li>
 </ul>
 </div>
-<h3 id="接口之间的兼容性" tabindex="-1"><a class="header-anchor" href="#接口之间的兼容性" aria-hidden="true">#</a> 接口之间的兼容性</h3>
+<h2 id="七、接口之间的兼容性" tabindex="-1"><a class="header-anchor" href="#七、接口之间的兼容性" aria-hidden="true">#</a> 七、接口之间的兼容性</h2>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">interface</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Point</span><span style="color: #ABB2BF"> {</span></span>
 <span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">x</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
 <span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">y</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
@@ -287,7 +282,7 @@
 <span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">z</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
 <span class="line"><span style="color: #ABB2BF">}</span></span>
 <span class="line"><span style="color: #E06C75">p2</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">new</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">Point4D</span><span style="color: #ABB2BF">()</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="函数之间的兼容性" tabindex="-1"><a class="header-anchor" href="#函数之间的兼容性" aria-hidden="true">#</a> 函数之间的兼容性</h3>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="八、函数之间的兼容性" tabindex="-1"><a class="header-anchor" href="#八、函数之间的兼容性" aria-hidden="true">#</a> 八、函数之间的兼容性</h2>
 <blockquote>
 <p>比较复杂，需要考虑：</p>
 <ul>
@@ -296,7 +291,7 @@
 <li>返回值类型：只关注返回值类型本身即可</li>
 </ul>
 </blockquote>
-<h4 id="_1-参数的个数兼容" tabindex="-1"><a class="header-anchor" href="#_1-参数的个数兼容" aria-hidden="true">#</a> <strong>1. 参数的个数兼容</strong></h4>
+<h3 id="_1-参数的个数兼容" tabindex="-1"><a class="header-anchor" href="#_1-参数的个数兼容" aria-hidden="true">#</a> <strong>1. 参数的个数兼容</strong></h3>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #ABB2BF"> </span><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">F1</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> (</span><span style="color: #E06C75; font-style: italic">a</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">void</span></span>
 <span class="line"><span style="color: #ABB2BF"> </span><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">F2</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> (</span><span style="color: #E06C75; font-style: italic">a</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">, </span><span style="color: #E06C75; font-style: italic">b</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">void</span></span>
 <span class="line"></span>
@@ -313,7 +308,7 @@
 <li>并且因为回调函数是有类型的，所以，TS 会自动推导出参数 <strong>item、index、array</strong> 的类型。</li>
 </ul>
 </div>
-<h4 id="_2-参数的参数类型" tabindex="-1"><a class="header-anchor" href="#_2-参数的参数类型" aria-hidden="true">#</a> <strong>2. 参数的参数类型</strong></h4>
+<h3 id="_2-参数的参数类型" tabindex="-1"><a class="header-anchor" href="#_2-参数的参数类型" aria-hidden="true">#</a> <strong>2. 参数的参数类型</strong></h3>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #7F848E; font-style: italic">/**</span></span>
 <span class="line"><span style="color: #7F848E; font-style: italic"> * 参数类型相同</span></span>
 <span class="line"><span style="color: #7F848E; font-style: italic"> */</span></span>
@@ -367,7 +362,7 @@
 <p class="hint-container-title">注意</p>
 <p>此处与前面讲到的接口兼容性冲突</p>
 </div>
-<h4 id="_3-参数的返回值类型" tabindex="-1"><a class="header-anchor" href="#_3-参数的返回值类型" aria-hidden="true">#</a> 3. 参数的返回值类型</h4>
+<h3 id="_3-参数的返回值类型" tabindex="-1"><a class="header-anchor" href="#_3-参数的返回值类型" aria-hidden="true">#</a> 3. 参数的返回值类型</h3>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #7F848E; font-style: italic">/**</span></span>
 <span class="line"><span style="color: #7F848E; font-style: italic"> * 原始类型</span></span>
 <span class="line"><span style="color: #7F848E; font-style: italic"> */</span></span>
@@ -399,7 +394,7 @@
 <li>如果返回值类型是对象类型，此时成员多的可以赋值给成员少的，比如，右侧类型 F7 和 F8。</li>
 </ol>
 </div>
-<h3 id="交叉类型" tabindex="-1"><a class="header-anchor" href="#交叉类型" aria-hidden="true">#</a> 交叉类型（&amp;）</h3>
+<h2 id="九、交叉类型" tabindex="-1"><a class="header-anchor" href="#九、交叉类型" aria-hidden="true">#</a> 九、交叉类型（&amp;）</h2>
 <blockquote>
 <p>功能类似于接口继承 ( extends )，用于组合多个类型为一个类型 (常用于对象类型)</p>
 </blockquote>
@@ -426,7 +421,7 @@
 </ul>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">type</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">PersonDetail</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> { </span><span style="color: #E06C75">name</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">string</span><span style="color: #ABB2BF">; </span><span style="color: #E06C75">phone</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">string</span><span style="color: #ABB2BF"> };</span></span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div>
-<h3 id="交叉类型-和接口继承-extends-的对比" tabindex="-1"><a class="header-anchor" href="#交叉类型-和接口继承-extends-的对比" aria-hidden="true">#</a> 交叉类型（<strong>&amp;</strong>）和接口继承（<strong>extends</strong>）的对比</h3>
+<h2 id="十、交叉类型-和接口继承-extends-的对比" tabindex="-1"><a class="header-anchor" href="#十、交叉类型-和接口继承-extends-的对比" aria-hidden="true">#</a> 十、交叉类型（<strong>&amp;</strong>）和接口继承（<strong>extends</strong>）的对比</h2>
 <blockquote>
 <ul>
 <li><strong>相同点：</strong> 都可以实现对象类型的组合。</li>
@@ -471,8 +466,231 @@
 <p>以上代码，接口继承会报错(类型不兼容)；交叉类型没有错误，可以简单的理解为:</p>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #ABB2BF">fn: (</span><span style="color: #E06C75; font-style: italic">value</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">string</span><span style="color: #ABB2BF"> | </span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">) </span><span style="color: #C678DD">=&gt;</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">string</span></span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div>
-<h3 id="泛型" tabindex="-1"><a class="header-anchor" href="#泛型" aria-hidden="true">#</a> 泛型</h3>
-<h4 id="基本使用" tabindex="-1"><a class="header-anchor" href="#基本使用" aria-hidden="true">#</a> 基本使用</h4>
+<h2 id="十一、泛型" tabindex="-1"><a class="header-anchor" href="#十一、泛型" aria-hidden="true">#</a> 十一、泛型</h2>
+<h3 id="_1-介绍-1" tabindex="-1"><a class="header-anchor" href="#_1-介绍-1" aria-hidden="true">#</a> 1. 介绍</h3>
+<blockquote>
+<p>泛型是可以在保证类型安全前提下，让函数等与多种类型一起工作，从而实现复用，常用于:<strong>函数、接口、class</strong> 中
+<strong>需求：</strong> 创建一个 id 函数，传入什么数据就返回该数据本身(也就是说，参数和返回值类型相同)。</p>
+</blockquote>
+<h3 id="_2-基本使用" tabindex="-1"><a class="header-anchor" href="#_2-基本使用" aria-hidden="true">#</a> 2. 基本使用</h3>
+<blockquote>
+<p>创建泛型</p>
+</blockquote>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">function</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">id</span><span style="color: #ABB2BF">&lt;</span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">&gt;(</span><span style="color: #E06C75; font-style: italic">value</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">): </span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF"> { </span><span style="color: #C678DD">return</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">value</span><span style="color: #ABB2BF"> }</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">解释</p>
+<ul>
+<li>
+<ol>
+<li><strong>语法：</strong> 在函数名称的后面添加&lt;&gt;(尖括号)，尖括号中添加类型变量，比如此处的<strong>Type</strong>。</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li><strong>类型变量 Type，</strong> 是一种特殊类型的变量，它处理类型而不是值。</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>该类型变量相当于一个类型容器，能够捕获用户提供的类型（具体是什么类型由用户调用该函数时指定）</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>因为 <strong>Type</strong> 是类型，因此可以将其作为函数参数和返回值的类型，表示参数和返回值具有相同的类型。</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>类型变量 <strong>Type</strong>，可以是任意合法的变量名称</li>
+</ol>
+</li>
+</ul>
+</div>
+<h3 id="_3-代码演示" tabindex="-1"><a class="header-anchor" href="#_3-代码演示" aria-hidden="true">#</a> 3. 代码演示</h3>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #7F848E; font-style: italic">/** 使用泛型创建函数 */</span></span>
+<span class="line"><span style="color: #C678DD">function</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">id</span><span style="color: #ABB2BF">&lt;</span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">&gt;(</span><span style="color: #E06C75; font-style: italic">value</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">): </span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">{</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #C678DD">return</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">value</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 调用泛型函数 */</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 1. 以 number 类型调用泛型函数 */</span></span>
+<span class="line"><span style="color: #C678DD">const</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">num</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">id</span><span style="color: #ABB2BF">&lt;</span><span style="color: #E5C07B">number</span><span style="color: #ABB2BF">&gt;(</span><span style="color: #D19A66">10</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 2. 以 string 类型调用泛型函数 */</span></span>
+<span class="line"><span style="color: #C678DD">const</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">str</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">id</span><span style="color: #ABB2BF">&lt;</span><span style="color: #E5C07B">string</span><span style="color: #ABB2BF">&gt;(</span><span style="color: #98C379">&quot;abc&quot;</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 3. 以 boolean 类型调用泛型函数 */</span></span>
+<span class="line"><span style="color: #C678DD">const</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">ret</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">id</span><span style="color: #ABB2BF">&lt;</span><span style="color: #E5C07B">boolean</span><span style="color: #ABB2BF">&gt;(</span><span style="color: #D19A66">false</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<ul>
+<li>
+<ol>
+<li>语法: 在函数名称的后面添加 <strong>&lt;&gt;</strong> (尖括号)，尖括号中指定具体的类型，比如，此处的 <strong>number</strong>。</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>当传入类型 <strong>number</strong> 后，这个类型就会被函数声明时指定的类型变量 <strong>Type</strong> 捕获到。</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>此时，<strong>Type</strong> 的类型就是 <strong>number</strong>，所以，函数 id 参数和返回值的类型也都是 <strong>number</strong>。<br />
+这样，通过泛型就做到了让id 函数与多种不同的类型一起工作，实现了复用的同时保证了类型安全。</li>
+</ol>
+</li>
+</ul>
+</div>
+<h3 id="_4-简化调用泛型函数" tabindex="-1"><a class="header-anchor" href="#_4-简化调用泛型函数" aria-hidden="true">#</a> 4. 简化调用泛型函数</h3>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #7F848E; font-style: italic">/** 使用泛型创建函数 */</span></span>
+<span class="line"><span style="color: #C678DD">function</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">id</span><span style="color: #ABB2BF">&lt;</span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">&gt;(</span><span style="color: #E06C75; font-style: italic">value</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">): </span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">{</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #C678DD">return</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">value</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 调用泛型函数 */</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 1. 以 number 类型调用泛型函数 */</span></span>
+<span class="line"><span style="color: #C678DD">const</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">num</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">id</span><span style="color: #ABB2BF">(</span><span style="color: #D19A66">10</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 2. 以 string 类型调用泛型函数 */</span></span>
+<span class="line"><span style="color: #C678DD">const</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">str</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">id</span><span style="color: #ABB2BF">(</span><span style="color: #98C379">&quot;abc&quot;</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7F848E; font-style: italic">/** 3. 以 boolean 类型调用泛型函数 */</span></span>
+<span class="line"><span style="color: #C678DD">const</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">ret</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">id</span><span style="color: #ABB2BF">(</span><span style="color: #D19A66">false</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">解释</p>
+<ul>
+<li>
+<ol>
+<li>在调用泛型函数时，可以省略 &lt;类型&gt; 来简化泛型函数的调用</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>TS 内部会采用一种叫做类型参数推断的机制，来根据传入的实参自动推断出类型变量 <strong>Type</strong> 的类型。</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>比如，传入实参10，TS 会自动推断出变量 num 的类型 <strong>number</strong>，并作为 <strong>Type</strong> 的类型</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>推荐：使用这种简化的方式调用泛型函数，使代码更短，更易于阅读</li>
+</ol>
+</li>
+</ul>
+</div>
+<div class="hint-container info">
+<p class="hint-container-title">说明</p>
+<p>当编译器无法推断类型或者推断的类型不准确时，就需要显式地传入类型参数</p>
+</div>
+<h3 id="_5-泛型约束" tabindex="-1"><a class="header-anchor" href="#_5-泛型约束" aria-hidden="true">#</a> 5. 泛型约束</h3>
+<blockquote>
+<p>默认情况下，泛型函数的类型变量 <strong>Type</strong> 可以代表多个类型，这导致无法访问任何属性。比如，id(a) 调用函数时获取参数的长度
+添加泛型约束收缩类型主要有以下两种方式</p>
+</blockquote>
+<h4 id="_1-指定更加具体的类型" tabindex="-1"><a class="header-anchor" href="#_1-指定更加具体的类型" aria-hidden="true">#</a> <strong>(1). 指定更加具体的类型</strong></h4>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #7F848E; font-style: italic">/** 泛型约束 给参数添加具体的类型 */</span></span>
+<span class="line"><span style="color: #C678DD">function</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">id</span><span style="color: #ABB2BF">&lt;</span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">&gt;(</span><span style="color: #E06C75; font-style: italic">value</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">[]): </span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">[]{</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E5C07B">console</span><span style="color: #ABB2BF">.</span><span style="color: #61AFEF">log</span><span style="color: #ABB2BF">(</span><span style="color: #E5C07B">value</span><span style="color: #ABB2BF">.</span><span style="color: #E06C75">length</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #C678DD">return</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">value</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">解释</p>
+<p><strong>Type</strong> 可以代表任意类型，无法保证一定存在 <strong>length</strong> 属性，比如 number 类型就没有 <strong>length</strong>。
+此时，就需要为泛型添加约束来收缩类型(缩窄类型取值范围)</p>
+</div>
+<h4 id="_2-添加约束" tabindex="-1"><a class="header-anchor" href="#_2-添加约束" aria-hidden="true">#</a> (2). <strong>添加约束</strong></h4>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #C678DD">interface</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">ILength</span><span style="color: #ABB2BF"> {</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E06C75">length</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">number</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C678DD">function</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">id</span><span style="color: #ABB2BF">&lt;</span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">extends</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">TLength</span><span style="color: #ABB2BF">&gt;(</span><span style="color: #E06C75; font-style: italic">value</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">): </span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">{</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #E5C07B">console</span><span style="color: #ABB2BF">.</span><span style="color: #61AFEF">log</span><span style="color: #ABB2BF">(</span><span style="color: #E5C07B">value</span><span style="color: #ABB2BF">.</span><span style="color: #E06C75">length</span><span style="color: #ABB2BF">)</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #C678DD">return</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">value</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #61AFEF">id</span><span style="color: #ABB2BF">([</span><span style="color: #98C379">&#39;a&#39;</span><span style="color: #ABB2BF">, </span><span style="color: #98C379">&#39;b&#39;</span><span style="color: #ABB2BF">]); </span><span style="color: #7F848E; font-style: italic">// 数组中有 length 属性</span></span>
+<span class="line"><span style="color: #61AFEF">id</span><span style="color: #ABB2BF">(</span><span style="color: #98C379">&quot;abcdef&quot;</span><span style="color: #ABB2BF">); </span><span style="color: #7F848E; font-style: italic">// 字符串中有 length 属性</span></span>
+<span class="line"><span style="color: #61AFEF">id</span><span style="color: #ABB2BF">({</span><span style="color: #E06C75">length</span><span style="color: #ABB2BF">: </span><span style="color: #D19A66">10</span><span style="color: #ABB2BF">, </span><span style="color: #E06C75">name</span><span style="color: #ABB2BF">: </span><span style="color: #98C379">&#39;jack&#39;</span><span style="color: #ABB2BF">}) </span><span style="color: #7F848E; font-style: italic">// 对象中可以传入length 属性就不会报错</span></span>
+<span class="line"><span style="color: #61AFEF">id</span><span style="color: #ABB2BF">(</span><span style="color: #D19A66">10</span><span style="color: #ABB2BF">); </span><span style="color: #7F848E; font-style: italic">// 报错</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">解释</p>
+<ul>
+<li>
+<ol>
+<li>创建描述约束的接口 <strong>ILength</strong>，该接口要求提供 <strong>length</strong> 属性</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>通过 <strong>extends</strong> 关键字使用该接口，为泛（类型变量）添加约束</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>该约束表示：传入的类型必须具有 <strong>length</strong> 属性</li>
+</ol>
+</li>
+</ul>
+</div>
+<div class="hint-container warning">
+<p class="hint-container-title">注意！</p>
+<p>传入的实参(比如，数组)只要有 <strong>length</strong> 属性即可，这也符合前面讲到的接口的类型兼容性</p>
+</div>
+<h4 id="_3-类型变量之间的约束" tabindex="-1"><a class="header-anchor" href="#_3-类型变量之间的约束" aria-hidden="true">#</a> <strong>(3). 类型变量之间的约束</strong></h4>
+<blockquote>
+<p>泛型的类型变量可以有多个，并且类型变量之间还可以约束(比如，第二个类型变量受第一个类型变量约束)比如，创建一个函数来获取对象中属性的值:</p>
+</blockquote>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="shiki one-dark-pro" style="background-color: #282c34" tabindex="0"><code><span class="line"><span style="color: #7F848E; font-style: italic">/** keyof 关键值是获取他后面类型的键值，从而约束第二个参数key的类型 */</span></span>
+<span class="line"><span style="color: #C678DD">function</span><span style="color: #ABB2BF"> </span><span style="color: #61AFEF">getProp</span><span style="color: #ABB2BF">&lt;</span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">, </span><span style="color: #E5C07B">Key</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">extends</span><span style="color: #ABB2BF"> </span><span style="color: #C678DD">keyof</span><span style="color: #ABB2BF"> </span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">&gt;(</span><span style="color: #E06C75; font-style: italic">obj</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">Type</span><span style="color: #ABB2BF">, </span><span style="color: #E06C75; font-style: italic">key</span><span style="color: #ABB2BF">: </span><span style="color: #E5C07B">Key</span><span style="color: #ABB2BF">){</span></span>
+<span class="line"><span style="color: #ABB2BF">    </span><span style="color: #C678DD">return</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">obj</span><span style="color: #ABB2BF">[</span><span style="color: #E06C75">key</span><span style="color: #ABB2BF">]</span></span>
+<span class="line"><span style="color: #ABB2BF">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C678DD">let</span><span style="color: #ABB2BF"> </span><span style="color: #E06C75">person</span><span style="color: #ABB2BF"> </span><span style="color: #56B6C2">=</span><span style="color: #ABB2BF"> { </span><span style="color: #E06C75">name</span><span style="color: #ABB2BF">: </span><span style="color: #98C379">&quot;yangshengjun&quot;</span><span style="color: #ABB2BF">, </span><span style="color: #E06C75">age</span><span style="color: #ABB2BF">: </span><span style="color: #D19A66">18</span><span style="color: #ABB2BF"> };</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #61AFEF">getProp</span><span style="color: #ABB2BF">(</span><span style="color: #E06C75">person</span><span style="color: #ABB2BF">, </span><span style="color: #98C379">&#39;name&#39;</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"><span style="color: #61AFEF">getProp</span><span style="color: #ABB2BF">(</span><span style="color: #E06C75">person</span><span style="color: #ABB2BF">, </span><span style="color: #98C379">&#39;age&#39;</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"><span style="color: #61AFEF">getProp</span><span style="color: #ABB2BF">(</span><span style="color: #E06C75">person</span><span style="color: #ABB2BF">, </span><span style="color: #98C379">&#39;gender&#39;</span><span style="color: #ABB2BF">); </span><span style="color: #7F848E; font-style: italic">// 报错，person 对象中没有 gender，因为 keyof 获取不到</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #61AFEF">getProp</span><span style="color: #ABB2BF">(</span><span style="color: #D19A66">18</span><span style="color: #ABB2BF">, </span><span style="color: #98C379">&#39;toFixed&#39;</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"><span style="color: #61AFEF">getProp</span><span style="color: #ABB2BF">(</span><span style="color: #98C379">&#39;abc&#39;</span><span style="color: #ABB2BF">, </span><span style="color: #98C379">&#39;split&#39;</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"><span style="color: #61AFEF">getProp</span><span style="color: #ABB2BF">(</span><span style="color: #98C379">&#39;abc&#39;</span><span style="color: #ABB2BF">, </span><span style="color: #D19A66">1</span><span style="color: #ABB2BF">); </span><span style="color: #7F848E; font-style: italic">// 1 表示 &#39;abc&#39; 字符串的索引</span></span>
+<span class="line"><span style="color: #61AFEF">getProp</span><span style="color: #ABB2BF">(</span><span style="color: #98C379">&#39;abc&#39;</span><span style="color: #ABB2BF">, </span><span style="color: #98C379">&#39;length&#39;</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"><span style="color: #61AFEF">getProp</span><span style="color: #ABB2BF">([</span><span style="color: #98C379">&#39;a&#39;</span><span style="color: #ABB2BF">, </span><span style="color: #98C379">&#39;b&#39;</span><span style="color: #ABB2BF">], </span><span style="color: #98C379">&#39;length&#39;</span><span style="color: #ABB2BF">);</span></span>
+<span class="line"><span style="color: #E5C07B">console</span><span style="color: #ABB2BF">.</span><span style="color: #61AFEF">log</span><span style="color: #ABB2BF">(</span><span style="color: #98C379">&#39;abcd&#39;</span><span style="color: #ABB2BF">[</span><span style="color: #D19A66">1</span><span style="color: #ABB2BF">]) </span><span style="color: #7F848E; font-style: italic">// 字符串也有索引</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">解释</p>
+<ul>
+<li>
+<ol>
+<li>添加了第二个类型变量 Key，两个类型变量之间使用 (,)逗号分隔</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li><strong>keyof</strong> 关键字接收一个对象类型，生成其键名称 (可能是字符串或数字)的联合类型。</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>本示例中 <strong>keyof Type</strong> 实际上获取的是 <strong>person</strong> 对象所有键的联合类型，也就是: 'name'|'age'</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>类型变量 <strong>Key</strong> 受 <strong>Type</strong> 约束，可以理解为: <strong>Key</strong> 只能是 <strong>Type</strong> 所有键中的任意一个，或者说只能访问对象中存在的属性。</li>
+</ol>
+</li>
+</ul>
+</div>
+<h3 id="泛型接口" tabindex="-1"><a class="header-anchor" href="#泛型接口" aria-hidden="true">#</a> 泛型接口</h3>
 </div></template>
 
 
