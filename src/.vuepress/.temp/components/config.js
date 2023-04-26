@@ -1,23 +1,23 @@
 import { defineClientConfig } from "@vuepress/client";
-import { hasGlobalComponent } from "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/shared.js";
+import { hasGlobalComponent } from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/shared.js";
 import { h } from "vue";
 
-import { useStyleTag } from "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/vueuse.js";
-import ArtPlayer from "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/ArtPlayer.js";
-import AudioPlayer from "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/AudioPlayer.js";
-import Badge from "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
-import BiliBili from "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/BiliBili.js";
-import CodePen from "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/CodePen.js";
-import FontIcon from "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
-import PDF from "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/PDF.js";
-import Replit from "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/Replit.js";
-import SiteInfo from "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/SiteInfo.js";
-import StackBlitz from "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/StackBlitz.js";
-import VideoPlayer from "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/VideoPlayer.js";
-import YouTube from "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/YouTube.js";
-import BackToTop from "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/BackToTop.js";
+import { useStyleTag } from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/vueuse.js";
+import ArtPlayer from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/ArtPlayer.js";
+import AudioPlayer from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/AudioPlayer.js";
+import Badge from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
+import BiliBili from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/BiliBili.js";
+import CodePen from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/CodePen.js";
+import FontIcon from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
+import PDF from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/PDF.js";
+import Replit from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/Replit.js";
+import SiteInfo from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/SiteInfo.js";
+import StackBlitz from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/StackBlitz.js";
+import VideoPlayer from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/VideoPlayer.js";
+import YouTube from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/YouTube.js";
+import BackToTop from "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/components/BackToTop.js";
 
-import "C:/Users/admin/Desktop/vuePress/spoony-z/node_modules/vuepress-plugin-components/lib/client/styles/sr-only.scss";
+import "C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/node_modules/vuepress-plugin-components/lib/client/styles/sr-only.scss";
 
 export default defineClientConfig({
   enhance: ({ app }) => {
