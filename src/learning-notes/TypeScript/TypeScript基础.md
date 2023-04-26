@@ -3,6 +3,9 @@ order: 1
 ---
 # TypeScript 介绍
 
+## 本笔记来源于B站
+<BiliBili bvid="BV14Z4y1u7pi" ratio="16:9" autoplay />
+
 ## TypeScript为什么要为JS添加类型支持?
 
 1. **背景：** JS的类型系统存在“先天缺陷”，JS代码中绝大部分错误都是类型错误(UncaughtTypeError)。
@@ -19,4 +22,3 @@ order: 1
 4. 支持最新的 ECMAScript 语法，优先体验最新的语法，让你走在前端技术的最前沿
 5. TS 类型推断机制，不需要在代码中的每个地方都显示标注类型，让你在享受优势的同时，尽量降低了成本。
 6. 除此之外，Vue3源码使用TS重写、Anqular默认支持TS、React与TS 完美配合，TypeScript已成为大中型前端项目的首先编程语言。
-

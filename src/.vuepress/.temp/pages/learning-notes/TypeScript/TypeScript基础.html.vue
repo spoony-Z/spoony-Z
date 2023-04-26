@@ -1,5 +1,6 @@
 <template><div><h1 id="typescript-介绍" tabindex="-1"><a class="header-anchor" href="#typescript-介绍" aria-hidden="true">#</a> TypeScript 介绍</h1>
-<h2 id="typescript为什么要为js添加类型支持" tabindex="-1"><a class="header-anchor" href="#typescript为什么要为js添加类型支持" aria-hidden="true">#</a> TypeScript为什么要为JS添加类型支持?</h2>
+<h2 id="本笔记来源于b站" tabindex="-1"><a class="header-anchor" href="#本笔记来源于b站" aria-hidden="true">#</a> 本笔记来源于B站</h2>
+<BiliBili bvid="BV14Z4y1u7pi" ratio="16:9" autoplay /><h2 id="typescript为什么要为js添加类型支持" tabindex="-1"><a class="header-anchor" href="#typescript为什么要为js添加类型支持" aria-hidden="true">#</a> TypeScript为什么要为JS添加类型支持?</h2>
 <ol>
 <li><strong>背景：</strong> JS的类型系统存在“先天缺陷”，JS代码中绝大部分错误都是类型错误(UncaughtTypeError)。</li>
 <li><strong>问题：</strong> 增加了找Bug、改Bug的时间，严重影响开发效率</li>

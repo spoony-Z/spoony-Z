@@ -32,7 +32,3 @@ projects:
 </div></template>
 
 
-
-<style>
-
-</style>

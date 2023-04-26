@@ -300,3 +300,10 @@
 </div></template>
 
 
+
+<style lang="scss">
+    .hero-info-wrapper {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+  }
+</style>
