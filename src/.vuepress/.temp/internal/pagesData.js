@@ -11,16 +11,6 @@ export const pagesData = {
   "v-200b415c": () => import(/* webpackChunkName: "v-200b415c" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/npm-tool/npm上传包.html.js").then(({ data }) => data),
   // path: /npm-tool/rimraf.html
   "v-7ec14f5c": () => import(/* webpackChunkName: "v-7ec14f5c" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/npm-tool/rimraf.html.js").then(({ data }) => data),
-  // path: /software-installation/Charles.html
-  "v-8cca1b86": () => import(/* webpackChunkName: "v-8cca1b86" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/Charles.html.js").then(({ data }) => data),
-  // path: /software-installation/IDEA%E5%AE%89%E8%A3%85.html
-  "v-6aea5eee": () => import(/* webpackChunkName: "v-6aea5eee" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/IDEA安装.html.js").then(({ data }) => data),
-  // path: /software-installation/IDEA%E7%9A%84%E4%BD%BF%E7%94%A8.html
-  "v-1242d0e0": () => import(/* webpackChunkName: "v-1242d0e0" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/IDEA的使用.html.js").then(({ data }) => data),
-  // path: /software-installation/MySql%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html
-  "v-b8be1f04": () => import(/* webpackChunkName: "v-b8be1f04" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/MySql安装教程.html.js").then(({ data }) => data),
-  // path: /software-installation/%E5%BD%B1%E5%88%80Rpa.html
-  "v-41d91349": () => import(/* webpackChunkName: "v-41d91349" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/影刀Rpa.html.js").then(({ data }) => data),
   // path: /vue-template-list/fantastic-admin.html
   "v-7c03131a": () => import(/* webpackChunkName: "v-7c03131a" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/vue-template-list/fantastic-admin.html.js").then(({ data }) => data),
   // path: /vue-template-list/gin-vue-admin.html
@@ -57,14 +47,22 @@ export const pagesData = {
   "v-269ae70f": () => import(/* webpackChunkName: "v-269ae70f" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/zh/slides.html.js").then(({ data }) => data),
   // path: /zh/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html
   "v-cce9318c": () => import(/* webpackChunkName: "v-cce9318c" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/zh/学习笔记.html.js").then(({ data }) => data),
+  // path: /software-installation/Charles.html
+  "v-8cca1b86": () => import(/* webpackChunkName: "v-8cca1b86" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/Charles.html.js").then(({ data }) => data),
+  // path: /software-installation/IDEA%E5%AE%89%E8%A3%85.html
+  "v-6aea5eee": () => import(/* webpackChunkName: "v-6aea5eee" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/IDEA安装.html.js").then(({ data }) => data),
+  // path: /software-installation/IDEA%E7%9A%84%E4%BD%BF%E7%94%A8.html
+  "v-1242d0e0": () => import(/* webpackChunkName: "v-1242d0e0" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/IDEA的使用.html.js").then(({ data }) => data),
+  // path: /software-installation/MySql%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html
+  "v-b8be1f04": () => import(/* webpackChunkName: "v-b8be1f04" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/MySql安装教程.html.js").then(({ data }) => data),
+  // path: /software-installation/%E5%BD%B1%E5%88%80Rpa.html
+  "v-41d91349": () => import(/* webpackChunkName: "v-41d91349" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/影刀Rpa.html.js").then(({ data }) => data),
   // path: /development-notes/Javascript/toLocaleString%E4%B8%8EtoString%E7%9A%84%E5%8C%BA%E5%88%AB.html
   "v-7f3f3cee": () => import(/* webpackChunkName: "v-7f3f3cee" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/Javascript/toLocaleString与toString的区别.html.js").then(({ data }) => data),
   // path: /development-notes/Javascript/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95.html
   "v-3eafd43d": () => import(/* webpackChunkName: "v-3eafd43d" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/Javascript/字符串方法.html.js").then(({ data }) => data),
   // path: /development-notes/Javascript/%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84some%E6%96%B9%E6%B3%95.html
   "v-3b49d4b6": () => import(/* webpackChunkName: "v-3b49d4b6" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/Javascript/数组中的some方法.html.js").then(({ data }) => data),
-  // path: /development-notes/recat/recat%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95%E7%AC%AC%E4%B8%80%E7%AB%A0.html
-  "v-46f649f1": () => import(/* webpackChunkName: "v-46f649f1" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/recat/recat开发记录第一章.html.js").then(({ data }) => data),
   // path: /development-notes/uniapp/uniapp%20%E4%B8%8B%E4%B8%80%E9%A1%B5%E8%BF%94%E5%9B%9E%E4%B8%8A%E4%B8%80%E9%A1%B5%E4%BC%A0%E5%8F%82.html
   "v-44381fd2": () => import(/* webpackChunkName: "v-44381fd2" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/uniapp/uniapp 下一页返回上一页传参.html.js").then(({ data }) => data),
   // path: /development-notes/uniapp/uniapp%E4%B8%AD%E8%B0%83%E8%B5%B7%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%8E%88%E6%9D%83.html
@@ -85,6 +83,8 @@ export const pagesData = {
   "v-18a9f2a7": () => import(/* webpackChunkName: "v-18a9f2a7" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/vue/基于element-ui二次封装表格.html.js").then(({ data }) => data),
   // path: /development-notes/vue/%E5%B0%81%E8%A3%85%E7%BB%84%E4%BB%B6%E4%BD%BF%E7%94%A8v-model%E4%BC%A0%E9%80%92%E5%80%BC.html
   "v-c48744e4": () => import(/* webpackChunkName: "v-c48744e4" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/vue/封装组件使用v-model传递值.html.js").then(({ data }) => data),
+  // path: /development-notes/recat/recat%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95%E7%AC%AC%E4%B8%80%E7%AB%A0.html
+  "v-46f649f1": () => import(/* webpackChunkName: "v-46f649f1" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/recat/recat开发记录第一章.html.js").then(({ data }) => data),
   // path: /learning-notes/java/intro.html
   "v-44271714": () => import(/* webpackChunkName: "v-44271714" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/intro.html.js").then(({ data }) => data),
   // path: /learning-notes/java/sumUp.html
@@ -99,16 +99,14 @@ export const pagesData = {
   "v-2e8a1b87": () => import(/* webpackChunkName: "v-2e8a1b87" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/TypeScript/初体验.html.js").then(({ data }) => data),
   // path: /learning-notes/vue/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html
   "v-b0967778": () => import(/* webpackChunkName: "v-b0967778" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/vue/创建项目.html.js").then(({ data }) => data),
+  // path: /zh/images/
+  "v-099f4ae2": () => import(/* webpackChunkName: "v-099f4ae2" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/zh/images/index.html.js").then(({ data }) => data),
   // path: /software-installation/jmeter/jmeter%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html
   "v-2b7954ee": () => import(/* webpackChunkName: "v-2b7954ee" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/jmeter/jmeter基本使用.html.js").then(({ data }) => data),
   // path: /software-installation/jmeter/jmeter%E7%AE%80%E5%AE%89%E8%A3%85.html
   "v-1dd61ea4": () => import(/* webpackChunkName: "v-1dd61ea4" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/jmeter/jmeter简安装.html.js").then(({ data }) => data),
-  // path: /zh/images/
-  "v-099f4ae2": () => import(/* webpackChunkName: "v-099f4ae2" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/zh/images/index.html.js").then(({ data }) => data),
   // path: /learning-notes/java/intermediate/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%AD%E7%BA%A7.html
   "v-23d83276": () => import(/* webpackChunkName: "v-23d83276" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/intermediate/面向对象中级.html.js").then(({ data }) => data),
-  // path: /learning-notes/java/senior/Java%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B.html
-  "v-9b417ccc": () => import(/* webpackChunkName: "v-9b417ccc" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/senior/Java高级教程.html.js").then(({ data }) => data),
   // path: /learning-notes/java/primary/DOS%E5%91%BD%E4%BB%A4%E4%BA%86%E8%A7%A3.html
   "v-0d6f74fe": () => import(/* webpackChunkName: "v-0d6f74fe" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/primary/DOS命令了解.html.js").then(({ data }) => data),
   // path: /learning-notes/java/primary/Java%20API%20%E6%96%87%E6%A1%A3.html
@@ -133,22 +131,24 @@ export const pagesData = {
   "v-4b466692": () => import(/* webpackChunkName: "v-4b466692" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/primary/进制.html.js").then(({ data }) => data),
   // path: /learning-notes/java/primary/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html
   "v-1ab94b83": () => import(/* webpackChunkName: "v-1ab94b83" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/primary/面向对象编程.html.js").then(({ data }) => data),
+  // path: /learning-notes/java/senior/Java%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B.html
+  "v-9b417ccc": () => import(/* webpackChunkName: "v-9b417ccc" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/senior/Java高级教程.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
   // path: /npm-tool/
   "v-00707d48": () => import(/* webpackChunkName: "v-00707d48" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/npm-tool/index.html.js").then(({ data }) => data),
-  // path: /software-installation/
-  "v-6c6b6470": () => import(/* webpackChunkName: "v-6c6b6470" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/index.html.js").then(({ data }) => data),
   // path: /vue-template-list/
   "v-3e61ee1e": () => import(/* webpackChunkName: "v-3e61ee1e" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/vue-template-list/index.html.js").then(({ data }) => data),
+  // path: /software-installation/
+  "v-6c6b6470": () => import(/* webpackChunkName: "v-6c6b6470" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/index.html.js").then(({ data }) => data),
   // path: /development-notes/Javascript/
   "v-488324ee": () => import(/* webpackChunkName: "v-488324ee" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/Javascript/index.html.js").then(({ data }) => data),
-  // path: /development-notes/recat/
-  "v-c98a53b6": () => import(/* webpackChunkName: "v-c98a53b6" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/recat/index.html.js").then(({ data }) => data),
   // path: /development-notes/uniapp/
   "v-7a82c3e5": () => import(/* webpackChunkName: "v-7a82c3e5" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/uniapp/index.html.js").then(({ data }) => data),
   // path: /development-notes/vue/
   "v-a77c6ffc": () => import(/* webpackChunkName: "v-a77c6ffc" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/vue/index.html.js").then(({ data }) => data),
+  // path: /development-notes/recat/
+  "v-c98a53b6": () => import(/* webpackChunkName: "v-c98a53b6" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/development-notes/recat/index.html.js").then(({ data }) => data),
   // path: /learning-notes/java/
   "v-2619446e": () => import(/* webpackChunkName: "v-2619446e" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/index.html.js").then(({ data }) => data),
   // path: /learning-notes/
@@ -161,10 +161,10 @@ export const pagesData = {
   "v-087a6fe8": () => import(/* webpackChunkName: "v-087a6fe8" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/jmeter/index.html.js").then(({ data }) => data),
   // path: /learning-notes/java/intermediate/
   "v-aa7521a6": () => import(/* webpackChunkName: "v-aa7521a6" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/intermediate/index.html.js").then(({ data }) => data),
-  // path: /learning-notes/java/senior/
-  "v-026853d4": () => import(/* webpackChunkName: "v-026853d4" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/senior/index.html.js").then(({ data }) => data),
   // path: /learning-notes/java/primary/
   "v-4a663736": () => import(/* webpackChunkName: "v-4a663736" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/primary/index.html.js").then(({ data }) => data),
+  // path: /learning-notes/java/senior/
+  "v-026853d4": () => import(/* webpackChunkName: "v-026853d4" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/senior/index.html.js").then(({ data }) => data),
   // path: /category/
   "v-5bc93818": () => import(/* webpackChunkName: "v-5bc93818" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/category/index.html.js").then(({ data }) => data),
   // path: /tag/
