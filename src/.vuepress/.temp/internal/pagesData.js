@@ -107,6 +107,8 @@ export const pagesData = {
   "v-099f4ae2": () => import(/* webpackChunkName: "v-099f4ae2" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/zh/images/index.html.js").then(({ data }) => data),
   // path: /learning-notes/java/intermediate/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%AD%E7%BA%A7.html
   "v-23d83276": () => import(/* webpackChunkName: "v-23d83276" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/intermediate/面向对象中级.html.js").then(({ data }) => data),
+  // path: /learning-notes/java/senior/Java%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B.html
+  "v-9b417ccc": () => import(/* webpackChunkName: "v-9b417ccc" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/senior/Java高级教程.html.js").then(({ data }) => data),
   // path: /learning-notes/java/primary/DOS%E5%91%BD%E4%BB%A4%E4%BA%86%E8%A7%A3.html
   "v-0d6f74fe": () => import(/* webpackChunkName: "v-0d6f74fe" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/primary/DOS命令了解.html.js").then(({ data }) => data),
   // path: /learning-notes/java/primary/Java%20API%20%E6%96%87%E6%A1%A3.html
@@ -131,8 +133,6 @@ export const pagesData = {
   "v-4b466692": () => import(/* webpackChunkName: "v-4b466692" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/primary/进制.html.js").then(({ data }) => data),
   // path: /learning-notes/java/primary/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html
   "v-1ab94b83": () => import(/* webpackChunkName: "v-1ab94b83" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/primary/面向对象编程.html.js").then(({ data }) => data),
-  // path: /learning-notes/java/senior/Java%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B.html
-  "v-9b417ccc": () => import(/* webpackChunkName: "v-9b417ccc" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/senior/Java高级教程.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
   // path: /npm-tool/
@@ -161,10 +161,10 @@ export const pagesData = {
   "v-087a6fe8": () => import(/* webpackChunkName: "v-087a6fe8" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/software-installation/jmeter/index.html.js").then(({ data }) => data),
   // path: /learning-notes/java/intermediate/
   "v-aa7521a6": () => import(/* webpackChunkName: "v-aa7521a6" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/intermediate/index.html.js").then(({ data }) => data),
-  // path: /learning-notes/java/primary/
-  "v-4a663736": () => import(/* webpackChunkName: "v-4a663736" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/primary/index.html.js").then(({ data }) => data),
   // path: /learning-notes/java/senior/
   "v-026853d4": () => import(/* webpackChunkName: "v-026853d4" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/senior/index.html.js").then(({ data }) => data),
+  // path: /learning-notes/java/primary/
+  "v-4a663736": () => import(/* webpackChunkName: "v-4a663736" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/learning-notes/java/primary/index.html.js").then(({ data }) => data),
   // path: /category/
   "v-5bc93818": () => import(/* webpackChunkName: "v-5bc93818" */"C:/Users/admin/Desktop/my-docs/my-docs/Gitee/spoony-z/src/.vuepress/.temp/pages/category/index.html.js").then(({ data }) => data),
   // path: /tag/

@@ -2,22 +2,22 @@
 <!-- more -->
 
 ## 使用IDEA 创建 java 项目
-![](./software-installation/imags/IDEA/10.png)
+![](./imags/IDEA/10.png)
 ## 创建类文件
-![](./software-installation/imags/IDEA/11.png)
+![](./imags/IDEA/11.png)
 ## 运行
-![](./software-installation/imags/IDEA/12.png)
+![](./imags/IDEA/12.png)
 ## 外观设置
-![](./software-installation/imags/IDEA/13.png)
+![](./imags/IDEA/13.png)
 ## 设置主题
-![](./software-installation/imags/IDEA/14.png)
+![](./imags/IDEA/14.png)
 ## 设置字体大小
-![](./software-installation/imags/IDEA/15.png)
+![](./imags/IDEA/15.png)
 ## 编码设置
-![](./software-installation/imags/IDEA/16.png)
+![](./imags/IDEA/16.png)
 ## 导入该行需要的类，
 **先配置 auto import，然后使用 alt + enter 即可**
-![](./software-installation/imags/IDEA/17.png)
+![](./imags/IDEA/17.png)
 
 ## 快捷键
 ### 快速格式化代码，
@@ -37,4 +37,4 @@ ctrl + H
 ### 查看模板
 **file --> settings --> editor --> Live templates**
 
-![](./software-installation/imags/IDEA/19.png)
+![](./imags/IDEA/19.png)
