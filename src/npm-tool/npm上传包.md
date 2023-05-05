@@ -309,6 +309,12 @@ npm publish
 
 # 添加用户
 npm adduser
+
+# 删除 npm 包
+npm unpublish 包名 --force
+
+# 检查包名是否重复
+npm view 包名
 ```
 <VideoPlayer
   src="https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f1/Sintel_movie_4K.webm/Sintel_movie_4K.webm.1080p.vp9.webm"
