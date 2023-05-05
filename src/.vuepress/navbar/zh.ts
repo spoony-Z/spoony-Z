@@ -63,7 +63,8 @@ export const zhNavbar = navbar([
           "IDEA安装",
           "IDEA的使用",
           "MySql安装教程",
-          "Charles测试工具"
+          "Charles",
+          "jmeter",
         ],
       },
       {

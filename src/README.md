@@ -5,7 +5,7 @@ icon: home
 title: 首页
 heroImage: /logo2.png
 
-heroText: SOBER
+heroText: '@SOBER'
 # bgImage: /bg1.png
 bgImage: /beijing.jpg
 heroFullScreen: true
