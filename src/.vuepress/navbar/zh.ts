@@ -17,7 +17,7 @@ export const zhNavbar = navbar([
       { text: "vue-next-admin", icon: "edit", link: "vue-next-admin" },
       { text: "vue-pure-admin", icon: "edit", link: "vue-pure-admin" },
       { text: "vue-vben-admin", icon: "edit", link: "vue-vben-admin" },
-      { text: "vue3-admin-element-template", icon: "edit", link: "vue3-admin-element-template" },
+      { text: "vue3-admin-element", icon: "edit", link: "vue3-admin-element" },
       { text: "vue3-antd-admin", icon: "edit", link: "vue3-antd-admin" },
       { text: "vue3-composition-admin", icon: "edit", link: "vue3-composition-admin" },
     ]
