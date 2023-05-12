@@ -33,7 +33,16 @@ export const zhSidebar = sidebar({
       link: "senior/",
       children: "structure",
     },
+    {
+      text: "面向对象",
+      icon: "note",
+      prefix: "面向对象/",
+      link: "面向对象/",
+      children: "structure",
+    },
     'sumUp',
+    'DOS',
+    'JavaAPI文档',
   ],
   "/learning-notes/vue/": [
     {

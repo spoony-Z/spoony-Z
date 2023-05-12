@@ -118,7 +118,6 @@ export default hopeTheme({
     //   provider: "Giscus",
     // },
 
-
     // 所有功能都已启用演示，只保留此处需要的功能
     mdEnhance: {
       align: true,

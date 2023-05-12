@@ -1,7 +1,11 @@
-# DOS介**绍**
-<!-- more -->
+---
+icon: info
+---
 
-**DOS**：Disk Operating System 磁盘操作系统
+# DOS 命令
+
+> **DOS**：Disk Operating System 磁盘操作系统
+<!-- more -->
 
 ## 常用的DOS命令
 
