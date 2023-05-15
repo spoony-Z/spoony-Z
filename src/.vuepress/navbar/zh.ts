@@ -4,7 +4,7 @@ export const zhNavbar = navbar([
   "/",
   {
     text: "vue模板",
-    icon: "edit",
+    icon: "/header-icon/vuetifyjs.svg",
     prefix: "/vue-template-list/",
     children: [
       { text: "fantastic-admin", icon: "edit", link: "fantastic-admin" },
@@ -24,7 +24,7 @@ export const zhNavbar = navbar([
   },
   {
     text: "笔记系列",
-    icon: "edit",
+    icon: "fa-duotone",
     prefix: "/",
     children: [
       {
@@ -35,6 +35,7 @@ export const zhNavbar = navbar([
           "java",
           "TypeScript",
           "vue",
+          "Mysql",
         ],
       },
       {

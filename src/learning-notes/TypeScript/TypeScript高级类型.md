@@ -2,6 +2,7 @@
 order: 4
 ---
 # TypeScript高级类型
+<!-- more -->
 
 ## 一、class 类
 

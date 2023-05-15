@@ -49,3 +49,15 @@ $theme-color: #ff7300;
 
 // $font-family-mono:  // 代码上使用的字体
 // $line-numbers-width:  // 代码块中行号的宽度
+
+.home.project:not(.pure) .feature-item::before {
+    content: " ";
+    position: none;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    background: none;
+    transition: none;
+    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -125%, 0);
+}

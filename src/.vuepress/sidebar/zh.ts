@@ -55,6 +55,13 @@ export const zhSidebar = sidebar({
       children: "structure",
     },
   ],
+  "/learning-notes/Mysql/":  [
+    {
+      text: "MySql",
+      icon: "creative",
+      children: "structure",
+    },
+  ],
   "/development-notes/vue/": [
     {
       text: "vue开发笔记",

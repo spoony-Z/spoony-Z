@@ -1,5 +1,5 @@
 # 封装vue组件打包上传到npm
-
+<!-- more -->
 ## 一、创建 vue2 的项目
 
 [传送！！！](/learning-notes/vue/创建项目.md);
