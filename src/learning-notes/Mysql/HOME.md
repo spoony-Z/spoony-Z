@@ -1,16 +1,16 @@
 ---
 home: true
-icon: stack
-title: Mysql
+sidebar: false
+title: ' '
 heroImage: /logo2.png
 
 heroText: 'Mysql学习笔记'
 bgImage: /bg1.png
 heroFullScreen: true
-tagline: ''
+tagline: '与其临渊羡鱼，不如退而结网'
 actions:
   - text: 开始阅读 💡 
-    link: Mysql/启动.md
+    link: ./启动.md
     type: primary
 
   - text: 文档
@@ -19,48 +19,48 @@ actions:
 features:
   - title: MySql 安装及启动
     icon: markdown
-    details: 新增文字对齐、上下角标、脚注、标记、任务列表、数学公式、流程图、图表与幻灯片支持
-    link: Mysql/启动.md
+    details: 使用 mysql -u root -p 命令进入数据库
+    link: ./启动.md
 
-  - title: 幻灯片页面
+  - title: 数据模型
     icon: slides
-    details: 添加幻灯片页面以显示你喜欢的内容
-    link: https://theme-hope.vuejs.press/zh/guide/layout/slides.html
+    details: 建立在关系模型基础上，由多张相互连接的二维表组成的数据库
+    link: ./数据模型.md
 
-  - title: 布局增强
+  - title: SQL
     icon: layout
-    details: 添加路径导航、页脚、改进的导航栏、改进的页面导航等。
-    link: https://theme-hope.vuejs.press/zh/guide/layout/
+    details: DDL、DML、DQL、DCL操作
+    link: ./SQL.md
 
-  - title: 浏览量与评论
+  - title: 函数
     icon: comment
     details: 配合 Waline 来开启阅读量统计与评论支持
-    link: https://theme-hope.vuejs.press/zh/guide/feature/comment.html
+    link: ./函数.md
 
-  - title: 文章信息
+  - title: 约束
     icon: info
     details: 为你的文章添加作者、写作日期、预计阅读时间、字数统计等信息
-    link: https://theme-hope.vuejs.press/zh/guide/feature/page-info.html
+    link: ./约束.md
+
+  - title: 多表查询
+    icon: palette
+    details: 支持自定义主题色并允许用户在预设的主题颜色之间切换
+    link: ./多表查询.md
+
+  - title: 事务
+    icon: support
+    details: 为你的网站带来完整的无障碍支持
+    link: ./事务.md
 
   - title: 博客支持
     icon: blog
     details: 使用一些很棒的布局提供博客功能，通过文章的日期、标签和分类，自动生成文章、分类、标签与时间轴列表
     link: https://theme-hope.vuejs.press/zh/guide/blog/intro.html
 
-  - title: 主题色切换
-    icon: palette
-    details: 支持自定义主题色并允许用户在预设的主题颜色之间切换
-    link: https://theme-hope.vuejs.press/zh/guide/interface/theme-color.html
-
   - title: 深色模式
     icon: contrast
     details: 可以自由切换浅色模式与深色模式
     link: https://theme-hope.vuejs.press/zh/guide/interface/darkmode.html
-
-  - title: 完整的无障碍支持
-    icon: support
-    details: 为你的网站带来完整的无障碍支持
-    link: https://theme-hope.vuejs.press/zh/guide/interface/accessibility.html
 
   - title: 文章加密
     icon: lock

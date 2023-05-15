@@ -35,7 +35,7 @@ export const zhNavbar = navbar([
           "java",
           "TypeScript",
           "vue",
-          "Mysql",
+          { text: "Mysql", icon: "stack", link: "Mysql/HOME" },
         ],
       },
       {

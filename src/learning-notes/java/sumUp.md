@@ -381,22 +381,3 @@ TODO
 * [如何评价《On Java 中文版》这本书？](https://github.com/crisxuan/bestJavaer/blob/master/book-view/read-onJava.md)
 * [《CSAPP》是一本什么书？](https://github.com/crisxuan/bestJavaer/blob/master/book-view/read-csapp.md)
 
-## 内推计划
-
-我的读者群几乎隔一段时间就会发送招聘信息，这些招聘信息良莠不齐，而且大多太过分散，需要的时候看不到，不需要的时候又出现了。所以为了能够让更多人享受到内推的福利和好处，我这边汇总了一下自己读者的内推信息，如果有需要，可以联系对应的负责人。
-
-* [腾讯内推](https://github.com/crisxuan/bestJavaer/blob/master/interview-jd/tencent.md)
-* [新奥内推](https://github.com/crisxuan/bestJavaer/blob/master/interview-jd/xinao.md)
-* [美团内推](https://github.com/crisxuan/bestJavaer/blob/master/interview-jd/meituan.md)
-
-
-## 欢迎关注
-
-欢迎关注作者的微信公众号「程序员cxuan」，关注公众号回复「cxuan」给你分享作者硬肝的六本 PDF，回复「网络」可以获取笔者总结的网络 PDF。
-
-![](https://z3.ax1x.com/2020/12/11/rkf8A0.jpg)
-
-
-
-
-

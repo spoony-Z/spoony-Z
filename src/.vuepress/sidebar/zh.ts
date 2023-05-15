@@ -55,10 +55,11 @@ export const zhSidebar = sidebar({
       children: "structure",
     },
   ],
-  "/learning-notes/Mysql/":  [
+  "/learning-notes/Mysql/": [
     {
       text: "MySql",
-      icon: "creative",
+      icon: "stack",
+      link: "HOME",
       children: "structure",
     },
   ],
@@ -84,7 +85,7 @@ export const zhSidebar = sidebar({
     },
   ],
   'npm-tool': 'structure',
-  "software-installation" : 'structure',
+  "software-installation": 'structure',
   "vue-template-list": 'structure',
   "/learning-notes/TypeScript/": [
     "",
