@@ -16,16 +16,25 @@ projects:
     name: Gitee主页
     desc: 伙伴详细介绍
     link: https://你的伙伴链接
+
   - icon: github
     name: GitHub主页
     desc: 进入博主GitHub主页
     link: https://github.com/spoony-Z
+
   - icon: wechat
     name: 博主微信
     desc: 微信号：IT-1997
+
   - icon: qq
     name: 博主QQ
     desc: 微信号：785311186
+    
+  - icon: qq
+    name: 168wangxiao-ui
+    desc: 基于Element-ui二次封装
+    link: https://spoony_z.gitee.io/168wangxiao-ui/
+    
     
 footer: 相关配置文档请见 [博客主页](https://theme-hope.vuejs.press/zh/guide/blog/home/)。
 ---
