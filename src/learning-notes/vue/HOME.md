@@ -4,13 +4,12 @@ sidebar: false
 title: ' '
 heroImage: /logo2.png
 
-heroText: 'Java学习笔记'
-bgImage: /bg1.png
+heroText: 'Vue学习笔记'
 heroFullScreen: true
-tagline: '与其临渊羡鱼，不如退而结网'
+tagline: 与其临渊羡鱼，不如退而结网
 actions:
   - text: 开始阅读 💡 
-    link: ./
+    link: ./启动.md
     type: primary
 
   - text: 文档

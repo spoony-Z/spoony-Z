@@ -4,27 +4,27 @@ export const zhNavbar = navbar([
   "/",
   {
     text: "vue模板",
-    icon: "/header-icon/vuetifyjs.svg",
+    icon: "vue",
     prefix: "/vue-template-list/",
     children: [
-      { text: "fantastic-admin", icon: "edit", link: "fantastic-admin" },
-      { text: "gin-vue-admin", icon: "edit", link: "gin-vue-admin" },
-      { text: "naive-ui-admin", icon: "edit", link: "naive-ui-admin" },
-      { text: "soybean-admin", icon: "edit", link: "soybean-admin" },
-      { text: "vue-admin-better", icon: "edit", link: "vue-admin-better" },
-      { text: "vue-admin-box", icon: "edit", link: "vue-admin-box" },
-      { text: "vue-element-admin", icon: "edit", link: "vue-element-admin" },
-      { text: "vue-next-admin", icon: "edit", link: "vue-next-admin" },
-      { text: "vue-pure-admin", icon: "edit", link: "vue-pure-admin" },
-      { text: "vue-vben-admin", icon: "edit", link: "vue-vben-admin" },
-      { text: "vue3-admin-element", icon: "edit", link: "vue3-admin-element" },
-      { text: "vue3-antd-admin", icon: "edit", link: "vue3-antd-admin" },
-      { text: "vue3-composition-admin", icon: "edit", link: "vue3-composition-admin" },
+      { text: "fantastic-admin", link: "fantastic-admin" },
+      { text: "gin-vue-admin", link: "gin-vue-admin" },
+      { text: "naive-ui-admin", link: "naive-ui-admin" },
+      { text: "soybean-admin", link: "soybean-admin" },
+      { text: "vue-admin-better", link: "vue-admin-better" },
+      { text: "vue-admin-box", link: "vue-admin-box" },
+      { text: "vue-element-admin", link: "vue-element-admin" },
+      { text: "vue-next-admin", link: "vue-next-admin" },
+      { text: "vue-pure-admin", link: "vue-pure-admin" },
+      { text: "vue-vben-admin", link: "vue-vben-admin" },
+      { text: "vue3-admin-element", link: "vue3-admin-element" },
+      { text: "vue3-antd-admin", link: "vue3-antd-admin" },
+      { text: "vue3-composition-admin", link: "vue3-composition-admin" },
     ]
   },
   {
     text: "笔记系列",
-    icon: "fa-duotone",
+    icon: "read",
     prefix: "/",
     children: [
       {
@@ -32,10 +32,15 @@ export const zhNavbar = navbar([
         icon: "edit",
         prefix: "learning-notes/",
         children: [
-          { text: "java", icon: "stack", link: "java/HOME" },
-          "TypeScript",
-          "vue",
-          { text: "Mysql", icon: "stack", link: "Mysql/HOME" },
+          { text: "java", icon: "java", link: "java/HOME" },
+          { text: "TypeScript", icon: "typescript", link: "TypeScript/HOME" },
+          { text: "vue", icon: "vue", link: "vue/HOME" },
+          { text: "Mysql", icon: "mysql", link: "Mysql/HOME" },
+          { text: "React", icon: "react", link: "React/HOME" },
+          { text: "Flutter", icon: "app", link: "Flutter/HOME" },
+          { text: "Nginx", icon: "nginx", link: "Nginx/HOME" },
+          { text: "Redis", icon: "stack", link: "Redis/HOME" },
+          
         ],
       },
       {
@@ -53,7 +58,7 @@ export const zhNavbar = navbar([
   },
   {
     text: "软件工具",
-    icon: "edit",
+    icon: "operate",
     prefix: "/",
     children: [
       {
