@@ -54,48 +54,7 @@ features:
 
   - title: 博客支持
     icon: blog
-    details: 使用一些很棒的布局提供博客功能，通过文章的日期、标签和分类，自动生成文章、分类、标签与时间轴列表
-    link: https://theme-hope.vuejs.press/zh/guide/blog/intro.html
-
-  - title: 深色模式
-    icon: contrast
-    details: 可以自由切换浅色模式与深色模式
-    link: https://theme-hope.vuejs.press/zh/guide/interface/darkmode.html
-
-  - title: 文章加密
-    icon: lock
-    details: 你可以为你的特定页面或特定目录进行加密，以便陌生人不能随意访问它们
-    link: https://theme-hope.vuejs.press/zh/guide/feature/encrypt.html
-
-  - title: 复制按钮
-    icon: copy
-    details: 一键复制代码块中的代码
-    link: https://theme-hope.vuejs.press/zh/guide/feature/copy-code.html
-
-  - title: 图片预览
-    icon: pic
-    details: 像相册一样允许你浏览、缩放并分享你的页面图片
-    link: https://theme-hope.vuejs.press/zh/guide/feature/photo-swipe.html
-
-  - title: SEO 增强
-    icon: config
-    details: 将最终生成的网页针对搜索引擎进行优化。
-    link: https://theme-hope.vuejs.press/zh/guide/advanced/seo.html
-
-  - title: Sitemap
-    icon: sitemap
-    details: 自动为你的网站生成 Sitemap
-    link: https://theme-hope.vuejs.press/zh/guide/advanced/sitemap.html
-
-  - title: Feed 支持
-    icon: rss
-    details: 生成你的 Feed，并通知你的用户订阅它
-    link: https://theme-hope.vuejs.press/zh/guide/advanced/feed.html
-
-  - title: PWA 支持
-    icon: mobile
-    details: 让你的网站更像一个 APP
-    link: https://theme-hope.vuejs.press/zh/guide/advanced/pwa.html
+    details: 使用一些很棒的布局提供博客功能
 copyright: false
-footer: 使用 <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议, 版权所有 © 2019-present Mr.Hope
+footer: 使用 <a href="https://github.com/spoony-Z" target="_blank">博主GitHub</a>  | MIT 协议, 版权所有 © 2023-present spoony-z
 ---

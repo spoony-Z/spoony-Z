@@ -1,3 +1,6 @@
+---
+title: npm上传vue组件
+---
 # 封装vue组件打包上传到npm
 <!-- more -->
 ## 一、创建 vue2 的项目

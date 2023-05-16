@@ -1,3 +1,6 @@
+---
+title: rimraf
+---
 # 快速删除node_modeules
 <!-- more -->
 

@@ -74,7 +74,8 @@ export const zhNavbar = navbar([
         prefix: "npm-tool/",
         children: [
           "rimraf",
-          "npm上传包"
+          "npm上传包",
+          {text: "168wangxiao-ui", link: " https://spoony_z.gitee.io/168wangxiao-ui"}
         ],
       },
     ]
