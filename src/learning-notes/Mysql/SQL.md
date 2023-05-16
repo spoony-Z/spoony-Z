@@ -174,6 +174,32 @@ delete from employee;
 ### DQL（Data Query Langtage）
 **数据查询语言，用来查询数据库中表的记录**
 
+- 基本查询
+```sh
+# 查询多个字段
+SELECT 字段1, 字段2, 字段3,··· FROM 表名;
+# 查询返回所有字段(尽量不要用 * 效率低)
+SELECT * FROM 表名;
+
+# 设置别名
+SELECT 字段1 [AS 别名1], 字段2 [AS 别名2] ··· FROM 表名;
+
+# 去除重复记录
+SELECT DISTINCT 字段列表 FROM 表名;
+
+```
+
+- 条件查询(WHERE)
+
+
+- 聚合函数(count、max、min、avg、sum)
+
+- 分组查询 (GROUP BY)
+
+- 排序查询 (ORDER BY)
+
+- 分页查询 (LIMIT)
+
 ### DCL（Data Control Language）
 **数据控制语言，用来创建数据库用户、控制数据库的访问权限**
 
