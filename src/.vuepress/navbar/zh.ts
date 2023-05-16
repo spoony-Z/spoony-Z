@@ -32,7 +32,7 @@ export const zhNavbar = navbar([
         icon: "edit",
         prefix: "learning-notes/",
         children: [
-          "java",
+          { text: "java", icon: "stack", link: "java/HOME" },
           "TypeScript",
           "vue",
           { text: "Mysql", icon: "stack", link: "Mysql/HOME" },
@@ -75,7 +75,7 @@ export const zhNavbar = navbar([
         children: [
           "rimraf",
           "npm上传包",
-          {text: "168wangxiao-ui", link: " https://spoony_z.gitee.io/168wangxiao-ui"}
+          {text: "168wangxiao-ui", link: "https://spoony_z.gitee.io/168wangxiao-ui"}
         ],
       },
     ]
