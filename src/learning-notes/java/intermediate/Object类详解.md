@@ -35,4 +35,4 @@ class A extends B {}
 
 ### equals方法
 > 是Object类中的方法，只能判断引用类型，如何看Jdk源码
-> 默认判断的是地址是否相等，子类中往往重写该方法，用于判断内容是否相等。比如 Integer, String [看看String 和Integer的 equals 源代码)
+> 默认判断的是地址是否相等，子类中往往重写该方法，用于判断内容是否相等。比如 Integer, String [看看String 和Integer的 equals 源代码]
