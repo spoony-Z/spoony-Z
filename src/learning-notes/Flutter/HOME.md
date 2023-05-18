@@ -10,7 +10,7 @@ heroFullScreen: true
 tagline: '与其临渊羡鱼，不如退而结网'
 actions:
   - text: 开始阅读 💡 
-    link: ./启动.md
+    link: ./
     type: primary
 
   - text: 文档
