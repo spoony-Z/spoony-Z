@@ -37,6 +37,14 @@ export const zhSidebar = sidebar({
       collapsible: true,
     },
     {
+      text: "面向对象(高级)",
+      icon: "note",
+      prefix: "面向对象(高级)/",
+      link: "面向对象(高级)/",
+      children: "structure",
+      collapsible: true,
+    },
+    {
       text: "java高级",
       icon: "note",
       prefix: "senior/",
