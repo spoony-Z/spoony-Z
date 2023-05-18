@@ -1,0 +1,1 @@
+import{_ as t,X as a,Y as _,$ as e,a2 as c}from"./framework-6cd8c18b.js";const r={},s=e("h1",{id:"抽象类",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#抽象类","aria-hidden":"true"},"#"),c(" 抽象类")],-1),o=[s];function n(d,i){return a(),_("div",null,o)}const l=t(r,[["render",n],["__file","抽象类.html.vue"]]);export{l as default};

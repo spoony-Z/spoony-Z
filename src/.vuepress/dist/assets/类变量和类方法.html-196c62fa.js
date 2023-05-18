@@ -1,0 +1,1 @@
+import{_,X as t,Y as a,$ as e,a2 as c}from"./framework-6cd8c18b.js";const r={},s=e("h1",{id:"类变量和类方法",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#类变量和类方法","aria-hidden":"true"},"#"),c(" 类变量和类方法")],-1),o=[s];function n(d,i){return t(),a("div",null,o)}const l=_(r,[["render",n],["__file","类变量和类方法.html.vue"]]);export{l as default};

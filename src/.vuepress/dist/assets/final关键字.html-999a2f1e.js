@@ -1,0 +1,1 @@
+import{_ as a,X as t,Y as n,$ as e,a2 as _}from"./framework-6cd8c18b.js";const c={},r=e("h1",{id:"final-关键字",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#final-关键字","aria-hidden":"true"},"#"),_(" final 关键字")],-1),s=[r];function o(i,l){return t(),n("div",null,s)}const f=a(c,[["render",o],["__file","final关键字.html.vue"]]);export{f as default};

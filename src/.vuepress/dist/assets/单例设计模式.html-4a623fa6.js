@@ -1,0 +1,1 @@
+import{_ as t,X as _,Y as a,$ as e,a2 as c}from"./framework-6cd8c18b.js";const r={},s=e("h1",{id:"单例设计模式",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#单例设计模式","aria-hidden":"true"},"#"),c(" 单例设计模式")],-1),o=[s];function n(d,i){return _(),a("div",null,o)}const l=t(r,[["render",n],["__file","单例设计模式.html.vue"]]);export{l as default};
