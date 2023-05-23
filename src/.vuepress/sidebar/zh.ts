@@ -92,6 +92,14 @@ export const zhSidebar = sidebar({
       children: "structure",
     },
   ],
+  "/development-notes/CSS/": [
+    {
+      text: "CSS开发笔记",
+      icon: "creative",
+      children: "structure",
+    },
+    
+  ],
   'npm-tool': 'structure',
   "software-installation": 'structure',
   "vue-template-list": 'structure',

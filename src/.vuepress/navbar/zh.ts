@@ -40,7 +40,6 @@ export const zhNavbar = navbar([
           { text: "Flutter", icon: "app", link: "Flutter/HOME" },
           { text: "Nginx", icon: "nginx", link: "Nginx/HOME" },
           { text: "Redis", icon: "stack", link: "Redis/HOME" },
-          
         ],
       },
       {
@@ -52,6 +51,7 @@ export const zhNavbar = navbar([
           "recat",
           "uniapp",
           "vue",
+          "css"
         ],
       },
     ],
