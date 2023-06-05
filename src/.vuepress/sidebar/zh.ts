@@ -100,6 +100,14 @@ export const zhSidebar = sidebar({
     },
     
   ],
+  "/learning-notes/network-security/": [
+    {
+      text: "网络安全",
+      icon: "network",
+      link: "HOME",
+      children: "structure",
+    },
+  ],
   'npm-tool': 'structure',
   "software-installation": 'structure',
   "vue-template-list": 'structure',
