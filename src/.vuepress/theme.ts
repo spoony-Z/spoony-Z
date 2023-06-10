@@ -25,7 +25,7 @@ export default hopeTheme({
   /** 全屏 */
   fullscreen: true,
   /** 纯净模式 */ 
-  pure: false,
+  pure: true,
 
   /** 
    * 导航栏设置 
@@ -51,7 +51,7 @@ export default hopeTheme({
     description: DivElement,
     // roundAvatar: true,
     avatar: "/logo2.png",
-    /** 点击头像或姓名跳转个人介绍页 */ 
+    /** 点击头像或姓名跳转个人介绍页 */
     intro: "/guide/",
     /** 显示位置 可选值（mobile, always, none） */
     sidebarDisplay: "none",
@@ -60,7 +60,7 @@ export default hopeTheme({
     /** 每页的文章数量 */
     articlePerPage: 8,
     /** 文章显示的信息 */
-    articleInfo: ["Author", "Original", "Date", "PageView", "Category", "Tag", "ReadingTime", "Word"],
+    articleInfo: [ "Original", "Date", "PageView", "Category", "Tag", "ReadingTime", "Word"],
     medias: {
       Gitee: "https://gitee.com/spoony_Z",
       GitHub: "https://github.com/spoony-Z",
@@ -84,6 +84,10 @@ export default hopeTheme({
       footer: "SOBER @ SPOONY-Z",
 
       displayFooter: true,
+      /** 关闭头部路径导航图标 */
+      breadcrumbIcon: false,
+      /** 关闭头部路径导航 */
+      breadcrumb: false,
       /** 这里也生效与上面一样 */
       // blog: {
       //   name: 'SOBER & spoony-z',
