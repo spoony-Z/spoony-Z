@@ -1,6 +1,6 @@
 # SOBER @ Spoony-z
 <div style="text-align: center;">
-<img style="width: 300px" src="./src/.vuepress/public/logo2.png">
+<img style="width: 150px" src="./src/.vuepress/public/logo2.png">
 </div>
 
 - **邮箱：** shenjun_y@yeah.net
