@@ -51,7 +51,7 @@ export default hopeTheme({
     description: DivElement,
     // roundAvatar: true,
     avatar: "/logo2.png",
-    /** 点击头像或姓名跳转个人介绍页 */ 
+    /** 点击头像或姓名跳转个人介绍页 */
     intro: "/guide/",
     /** 显示位置 可选值（mobile, always, none） */
     sidebarDisplay: "none",
