@@ -1,5 +1,6 @@
 // 你可以在这里换颜色
-$theme-color: #ff7300;
+// $theme-color: #ff7300;
+$theme-color: #3eaf7c;
 // 代码上使用的字体
 // $font-family-mono: "Nimbus Roman No9 L";
 // 背景色
@@ -47,9 +48,8 @@ $theme-color: #ff7300;
 
 /** 代码 */
 
-// $font-family-mono:  // 代码上使用的字体
+$font-family-mono: 'Microsoft YaHei-Regular, Microsoft YaHei'; // 代码上使用的字体
 // $line-numbers-width:  // 代码块中行号的宽度
-
 .home.project:not(.pure) .feature-item::before {
     content: " ";
     position: none;
