@@ -1,0 +1,1 @@
+import{_ as a,X as t,Y as r,Z as c,a0 as e,a1 as o}from"./framework-2185e866.js";const s={},n=e("h1",{id:"练习",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#练习","aria-hidden":"true"},"#"),o(" 练习")],-1);function _(d,i){return t(),r("div",null,[n,c(" more ")])}const h=a(s,[["render",_],["__file","练习.html.vue"]]);export{h as default};

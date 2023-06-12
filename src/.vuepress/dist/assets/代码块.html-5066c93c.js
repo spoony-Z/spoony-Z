@@ -1,1 +1,0 @@
-import{_ as t,X as a,Y as _,$ as e,a2 as c}from"./framework-6cd8c18b.js";const r={},s=e("h1",{id:"代码块",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#代码块","aria-hidden":"true"},"#"),c(" 代码块")],-1),o=[s];function n(d,i){return a(),_("div",null,o)}const l=t(r,[["render",n],["__file","代码块.html.vue"]]);export{l as default};

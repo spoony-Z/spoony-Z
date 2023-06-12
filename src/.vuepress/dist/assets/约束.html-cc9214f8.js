@@ -1,1 +1,0 @@
-import{_ as t,X as a,Y as c,$ as e,a2 as r}from"./framework-6cd8c18b.js";const s={},_=e("h1",{id:"约束",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#约束","aria-hidden":"true"},"#"),r(" 约束")],-1),o=[_];function n(d,i){return a(),c("div",null,o)}const l=t(s,[["render",n],["__file","约束.html.vue"]]);export{l as default};
