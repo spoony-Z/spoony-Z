@@ -1,1 +1,0 @@
-import{_ as a,X as t,Y as c,$ as e,a2 as r}from"./framework-6cd8c18b.js";const s={},_=e("h1",{id:"自动化流程的一般构成",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#自动化流程的一般构成","aria-hidden":"true"},"#"),r(" 自动化流程的一般构成")],-1),o=[_];function n(d,i){return t(),c("div",null,o)}const l=a(s,[["render",n],["__file","影刀Rpa.html.vue"]]);export{l as default};

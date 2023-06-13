@@ -1,0 +1,1 @@
+import{_,X as a,Y as t,a0 as e,a1 as n}from"./framework-2185e866.js";const c={},r=e("h1",{id:"enum关键字实现枚举",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#enum关键字实现枚举","aria-hidden":"true"},"#"),n(" enum关键字实现枚举")],-1),s=[r];function o(d,i){return a(),t("div",null,s)}const u=_(c,[["render",o],["__file","enum关键字实现枚举.html.vue"]]);export{u as default};

@@ -4,12 +4,12 @@ sidebar: false
 title: ' '
 heroImage: /logo2.png
 
-heroText: 'Vue学习笔记'
+heroText: 'Vue'
 heroFullScreen: true
 tagline: 与其临渊羡鱼，不如退而结网
 actions:
   - text: 开始阅读 💡 
-    link: ./启动.md
+    link: ./创建项目.md
     type: primary
 
   - text: 文档

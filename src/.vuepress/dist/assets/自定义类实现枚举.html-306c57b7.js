@@ -1,0 +1,1 @@
+import{_,X as a,Y as t,a0 as e,a1 as c}from"./framework-2185e866.js";const r={},s=e("h1",{id:"自定义类实现枚举",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#自定义类实现枚举","aria-hidden":"true"},"#"),c(" 自定义类实现枚举")],-1),o=[s];function n(d,i){return a(),t("div",null,o)}const l=_(r,[["render",n],["__file","自定义类实现枚举.html.vue"]]);export{l as default};
