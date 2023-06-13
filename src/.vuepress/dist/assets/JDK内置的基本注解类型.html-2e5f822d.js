@@ -1,1 +1,0 @@
-import{_,X as a,Y as t,a0 as e,a1 as c}from"./framework-2185e866.js";const r={},s=e("h1",{id:"jdk内置的基本注解类型",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#jdk内置的基本注解类型","aria-hidden":"true"},"#"),c(" JDK内置的基本注解类型")],-1),o=[s];function n(d,i){return a(),t("div",null,o)}const l=_(r,[["render",n],["__file","JDK内置的基本注解类型.html.vue"]]);export{l as default};
