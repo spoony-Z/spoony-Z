@@ -1,0 +1,1 @@
+import{_ as r,X as t,Y as a,a0 as e,a1 as i}from"./framework-2185e866.js";const n={},s=e("h1",{id:"stringbuilder",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#stringbuilder","aria-hidden":"true"},"#"),i(" StringBuilder")],-1),c=[s];function d(o,_){return t(),a("div",null,c)}const u=r(n,[["render",d],["__file","StringBuilder.html.vue"]]);export{u as default};

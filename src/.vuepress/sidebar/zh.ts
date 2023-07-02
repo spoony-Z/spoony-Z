@@ -61,6 +61,14 @@ export const zhSidebar = sidebar({
       collapsible: true,
     },
     {
+      text: "常用类",
+      icon: "note",
+      prefix: "常用类/",
+      link: "常用类/",
+      children: "structure",
+      collapsible: true,
+    },
+    {
       text: "java高级",
       icon: "note",
       prefix: "senior/",

@@ -1,0 +1,1 @@
+import{_ as a,X as t,Y as c,a0 as e,a1 as r}from"./framework-2185e866.js";const s={},o=e("h1",{id:"math",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#math","aria-hidden":"true"},"#"),r(" Math")],-1),n=[o];function _(h,d){return t(),c("div",null,n)}const l=a(s,[["render",_],["__file","Math.html.vue"]]);export{l as default};
