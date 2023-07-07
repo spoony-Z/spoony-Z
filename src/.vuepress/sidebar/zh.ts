@@ -132,6 +132,14 @@ export const zhSidebar = sidebar({
       children: "structure",
     },
   ],
+  "/learning-notes/created-cli/": [
+    {
+      text: "搭建脚手架",
+      icon: "network",
+      link: "HOME",
+      children: "structure",
+    },
+  ],
   'npm-tool': 'structure',
   "software-installation": 'structure',
   "vue-template-list": 'structure',

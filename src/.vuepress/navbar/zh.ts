@@ -41,6 +41,7 @@ export const zhNavbar = navbar([
           { text: "Nginx", icon: "nginx", link: "Nginx/HOME" },
           { text: "Redis", icon: "stack", link: "Redis/HOME" },
           { text: "网络安全", icon: "network", link: "network-security/HOME" },
+          { text: "搭建脚手架", icon: "network", link: "created-cli/HOME" },
         ],
       },
       {
@@ -86,13 +87,11 @@ export const zhNavbar = navbar([
       },
     ]
     },
-
     {
       text: "PPT笔记",
       icon: "edit",
       link: "/zh/学习笔记"
-      }
-
+      },
     
   // {
   //   text: "gitHub",
