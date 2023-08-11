@@ -53,7 +53,8 @@ export const zhNavbar = navbar([
           "recat",
           "uniapp",
           "vue",
-          "css"
+          "css",
+          { text: "微信小程序", icon: "network", link: "vx-applet/" },
         ],
       },
     ],

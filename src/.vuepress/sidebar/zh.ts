@@ -124,6 +124,14 @@ export const zhSidebar = sidebar({
     },
     
   ],
+  "/development-notes/vx-applet/": [
+    {
+      text: "微信小程序",
+      icon: "creative",
+      children: "structure",
+    },
+    
+  ],
   "/learning-notes/network-security/": [
     {
       text: "网络安全",
