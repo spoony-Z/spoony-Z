@@ -59,7 +59,7 @@ export default defineUserConfig({
     //       /**
     //        * 功能按钮配置
     //        */
-    //       // buttons: PhotoSwipeDefaultUI.ShareButtonData[];
+          // buttons: PhotoSwipeDefaultUI.ShareButtonData[];
     //     },
     //   },
     // }),

@@ -25,7 +25,7 @@ export default hopeTheme({
   /** 全屏 */
   fullscreen: true,
   /** 纯净模式 */ 
-  pure: true,
+  // pure: true,
 
   /** 
    * 导航栏设置 
