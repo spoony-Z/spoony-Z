@@ -149,6 +149,13 @@ export const zhSidebar = sidebar({
     },
   ],
   'npm-tool': 'structure',
+  '/learning-notes/Flutter/': [
+    "",
+    {
+      text: "",
+      children: "structure",
+    },
+  ],
   "software-installation": 'structure',
   "vue-template-list": 'structure',
   "/learning-notes/TypeScript/": [
