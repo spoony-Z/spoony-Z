@@ -52,4 +52,4 @@ dart --version
 
 ![image](./image/8.png)
 
-至此 Flutter 环境已搭建完成，下一步就是安装  Android Studio 编辑器 [点击进去官网](https://developer.android.com/studio/index.html)
+至此 Flutter 环境已搭建完成，下一步就是安装  Android Studio 编辑器 [点击进入官网](https://developer.android.com/studio/index.html)

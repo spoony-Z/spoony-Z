@@ -13,3 +13,9 @@ flutter doctor
 ```sh
 flutter clean
 ```
+
+3. 查看 Flutter 和 Dart 版本
+```sh
+flutter --version
+dart --version
+```
