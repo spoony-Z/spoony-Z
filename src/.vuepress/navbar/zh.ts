@@ -37,6 +37,7 @@ export const zhNavbar = navbar([
           { text: "vue", icon: "vue", link: "vue/HOME" },
           { text: "Mysql", icon: "mysql", link: "Mysql/HOME" },
           { text: "React", icon: "react", link: "React/HOME" },
+          { text: "Dart", icon: "app", link: "Dart/HOME" },
           { text: "Flutter", icon: "app", link: "Flutter/HOME" },
           { text: "Nginx", icon: "nginx", link: "Nginx/HOME" },
           { text: "Redis", icon: "stack", link: "Redis/HOME" },
@@ -82,17 +83,19 @@ export const zhNavbar = navbar([
         prefix: "npm-tool/",
         children: [
           "rimraf",
+          "nvm",
           "npm上传包",
-          {text: "168wangxiao-ui", link: "https://spoony_z.gitee.io/168wangxiao-ui"}
         ],
       },
     ]
-    },
-    {
-      text: "PPT笔记",
-      icon: "edit",
-      link: "/zh/学习笔记"
-      },
+  },
+  {text: "168wangxiao-ui", link: "https://spoony_z.gitee.io/168wangxiao-ui"},
+  {text: "tsTool-list", link: "https://spoony_z.gitee.io/168wangxiao-ui"},
+    // {
+    //   text: "PPT笔记",
+    //   icon: "edit",
+    //   link: "/zh/学习笔记"
+    //   },
     
   // {
   //   text: "gitHub",
