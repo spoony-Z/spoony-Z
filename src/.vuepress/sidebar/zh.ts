@@ -165,4 +165,5 @@ export const zhSidebar = sidebar({
       children: "structure",
     },
   ],
+  "Dart": "structure"
 });
