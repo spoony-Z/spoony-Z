@@ -90,7 +90,7 @@ export const zhNavbar = navbar([
     ]
   },
   {text: "168wangxiao-ui", link: "https://spoony_z.gitee.io/168wangxiao-ui"},
-  {text: "tsTool-list", link: "https://spoony_z.gitee.io/168wangxiao-ui"},
+  {text: "tsTool-list", link: "https://spoony_z.gitee.io/ts-tool-list/"},
     // {
     //   text: "PPT笔记",
     //   icon: "edit",

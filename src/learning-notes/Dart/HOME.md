@@ -10,7 +10,7 @@ heroFullScreen: true
 tagline: '与其临渊羡鱼，不如退而结网'
 actions:
   - text: 开始阅读 💡 
-    link: ./概述/概述.md
+    link: ./
     type: primary
 
   - text: 文档
@@ -20,7 +20,7 @@ features:
   - title: MySql 安装及启动
     icon: markdown
     details: 使用 mysql -u root -p 命令进入数据库
-    link: ./启动.md
+    link: ./
 
   - title: 数据模型
     icon: slides
