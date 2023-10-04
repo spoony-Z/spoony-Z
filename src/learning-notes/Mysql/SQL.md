@@ -128,7 +128,7 @@ ALTER TABLE 表名 DROP 字段名;
 ```
 
 ### DML（Data Manipulation Language）
-**数据操作语言，用来对数据库表中的数据进行增删改**
+> 描述：数据操作语言，用来对数据库表中的数据进行增删改
 
 - 添加数据
 ```sh
@@ -172,29 +172,151 @@ delete from employee;
 ```
 
 ### DQL（Data Query Langtage）
-**数据查询语言，用来查询数据库中表的记录**
+> 描述：数据查询语言，用来查询数据库中表的记录<br />
+> 关键字：**SELECT**
 
 - 基本查询
 ```sh
 # 查询多个字段
 SELECT 字段1, 字段2, 字段3,··· FROM 表名;
+
 # 查询返回所有字段(尽量不要用 * 效率低)
 SELECT * FROM 表名;
 
-# 设置别名
+# 设置别名（其中AS可以省略）
 SELECT 字段1 [AS 别名1], 字段2 [AS 别名2] ··· FROM 表名;
 
 # 去除重复记录
 SELECT DISTINCT 字段列表 FROM 表名;
-
 ```
 
 - 条件查询(WHERE)
 
+```sh
+# 语句
+SELECT 字段列表 FROM 表名 WHERE 条件列表;
+
+# 示例：
+
+# 在 advert 表中查询年龄为 18 的人
+select * from advert where age = 18;
+
+# 在 advert 表中查询年龄大于 18 的人
+select * from advert where age > 18;
+
+# 在 advert 表中查询年龄大于等于 18 的人
+select * from advert where age >= 18;
+
+# 在 advert 表中查询年龄为 null 的人
+select * from advert where age is null;
+
+# 在 advert 表中查询年龄为 18 到 40 的人
+select * from advert where age >= 18 && age <= 40;
+select * from advert where age >= 18 and age <= 40;
+select * from advert where age >= 18 between 15 and 40; # 注意：between 后面是最小值 and 后面是最大值
+
+# 查询性别为 女 且年龄 小于 25岁的员工信息
+select * from advert where gender = '女' and age > 25;
+
+# 查询年龄 等于 18 或 20 或 40 的员工信息
+select * from advert where age = 18 or age = 20 or age = 40;
+select * from advert where age in(18, 20, 40);
+
+# 查询姓名为2个字的员工信息
+select * from advert where name like '__'; # 2个下划线，一个下划线表示一个占位符（显示原因实际为两个下划线）
+# 查询姓名为3个字的员工信息
+select * from advert where name like '___'; # 3个下划线
+
+# 查询身份证号最后一位是 X 的员工信息
+select * from advert where idcard like '%X'; # % 匹配任意字符，但保证最后一位是 X
+select * from advert where idcard like '_________________X'; # 身份证是18为 所以要17个下划线 最后一位是 X
+
+
+
+```
+条件列表
+| 比较运算符       | 比较运算符功能                             |
+| ---------------- | ------------------------------------------ |
+| >                | 大于                                       |
+| >=               | 大于等于                                   |
+| <                | 小于                                       |
+| <=               | 小于等于                                   |
+| =                | 等于                                       |
+| <> 或 !=         | 不等于                                     |
+| BETWEEN...AND... | 在某个范围之内（含最小、最大值）           |
+| IN(...)          | 在 in 之后的列表中的值，多选一             |
+| LIKE 占位符      | 模糊匹配（ _ 匹配单个字，%匹配任意个字符） |
+| IS NULL          | 是 null                                    |
+
+| 逻辑运算符   | 逻辑运算符功能               |
+| ------------ | ---------------------------- |
+| AND  或  &&  | 并且（多个条件同时成立）     |
+| OR  或  \|\| | 或者（多个条件任意一个成立） |
+| NOT  或  !   | 非， 不是                    |
+
 
 - 聚合函数(count、max、min、avg、sum)
 
+> 描述：将一列数据作为一个整体，进行纵向计算。
+
+常见的聚合函数（针对于表中的某一列）
+
+| 函数   | 功能               |
+| ------------ | ---------------------------- |
+| count  | 统计数量     |
+| max | 最大值 |
+| min | 最小值                    |
+| avg | 平均值                    |
+| sum | 求和                    |
+
+
+
+```sh
+# 统计该表中的员工数量
+select count(*) advert;
+
+# 统计该表中的员工平均年龄 
+select avg(age) advert;
+
+# 统计该表中的员工最大年龄 
+select max(age) advert;
+
+# 统计该表中的员工平均年龄 
+select min(age) advert;
+
+# 统计西安地区员工的年龄之和
+select sum(age) from advert where workaddress = '西安
+
+```
+
+:::warning 注意
+1. null 值不参与所有聚合函数运算。
+2. 执行顺序: where > 聚合函数 > having
+3. 分组之后，查询的字段一般为聚合函数和分组字段，查询其他字段无任何意义。
+:::
+
 - 分组查询 (GROUP BY)
+```sh
+# 语句
+SELECT 字段列表 FROM 表名[WHERE 条件] GROUP BY 分组字段名[HAVING 分组后过滤条件]
+
+# 示例
+
+## 根据性别分组统计 男性员工 和 女性员工 的数量
+select gender, count(*) from advert group by gender
+
+## 根据性别分组 ，统计 男性员工 和 女性员工 的 平均年龄
+select gender, avg(age) from advert group by gender
+
+## 查询年龄 小于45 的员工 ，并根据 工作地址 分组 ， 获取 员工数量 大于等于 3 的工作地址
+select workaddress, count(*) address_count from emp where age < 45 group by workaddress having address_count >= 3
+
+```
+  > - where与having区别
+    > - - - 
+    > **执行时机不同:** where是分组之前进行过滤，不满足where条件，不参与分组；而having是分组之后对结果进行过滤.
+    >
+    > **判断条件不同:** where不能对聚合函数进行判断，而having可以。
 
 - 排序查询 (ORDER BY)
 
@@ -202,4 +324,3 @@ SELECT DISTINCT 字段列表 FROM 表名;
 
 ### DCL（Data Control Language）
 **数据控制语言，用来创建数据库用户、控制数据库的访问权限**
-

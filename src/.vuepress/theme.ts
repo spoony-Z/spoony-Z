@@ -104,8 +104,8 @@ export default hopeTheme({
   /** 文章加密 */
   encrypt: {
     /** 整个站点加密 */
-    // global: true,
-    // admin: ["1234"],
+    global: true,
+    admin: ["1234"],
 
     /** 局部加密 */
     config: {
@@ -118,7 +118,7 @@ export default hopeTheme({
     blog: true,
     /** 评论 */
     // comment: {
-    //   // @ts-expect-error: 您应该生成并使用自己的评论服务
+    // @ts-expect-error: 您应该生成并使用自己的评论服务
     //   provider: "Giscus",
     // },
 
