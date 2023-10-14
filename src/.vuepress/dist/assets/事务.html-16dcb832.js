@@ -1,1 +1,0 @@
-import{_ as a,X as t,Y as c,a0 as e,a1 as r}from"./framework-2185e866.js";const s={},_=e("h1",{id:"事务",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#事务","aria-hidden":"true"},"#"),r(" 事务")],-1),o=[_];function n(d,i){return t(),c("div",null,o)}const l=a(s,[["render",n],["__file","事务.html.vue"]]);export{l as default};

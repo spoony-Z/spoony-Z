@@ -1,1 +1,0 @@
-import{_ as r,X as t,Y as a,a0 as e,a1 as n}from"./framework-2185e866.js";const s={},c=e("h1",{id:"stringbuffer",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#stringbuffer","aria-hidden":"true"},"#"),n(" StringBuffer")],-1),f=[c];function o(i,_){return t(),a("div",null,f)}const u=r(s,[["render",o],["__file","StringBuffer.html.vue"]]);export{u as default};

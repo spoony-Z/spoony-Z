@@ -1,1 +1,0 @@
-import{_ as e,X as t,Y as _,a0 as a,a1 as c}from"./framework-2185e866.js";const r={},s=a("h1",{id:"暂无-java-高级教程",tabindex:"-1"},[a("a",{class:"header-anchor",href:"#暂无-java-高级教程","aria-hidden":"true"},"#"),c(" 暂无 Java 高级教程")],-1),o=[s];function n(d,i){return t(),_("div",null,o)}const l=e(r,[["render",n],["__file","Java高级教程.html.vue"]]);export{l as default};

@@ -1,1 +1,0 @@
-import{_ as a,X as t,Y as r,a0 as e,a1 as n}from"./framework-2185e866.js";const c={},d=e("h1",{id:"date、calendar···",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#date、calendar···","aria-hidden":"true"},"#"),n(" Date、Calendar···")],-1),_=[d];function s(o,l){return t(),r("div",null,_)}const h=a(c,[["render",s],["__file","Date、Calendar···.html.vue"]]);export{h as default};
