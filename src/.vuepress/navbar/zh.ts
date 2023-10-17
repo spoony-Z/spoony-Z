@@ -89,6 +89,38 @@ export const zhNavbar = navbar([
       },
     ]
   },
+  {
+    text: "前端系列",
+    icon: "operate",
+    prefix: "/front-end",
+    children: [
+      {
+        text: "JavaScript高级",
+        icon: "edit",
+        link: "/js/this.md",
+      },
+      {
+        text: "vue2源码讲解",
+        icon: "edit",
+        link: "npm-tool/",
+      },
+      {
+        text: "vue3源码讲解",
+        icon: "edit",
+        link: "npm-tool/",
+      },
+      {
+        text: "微前端 + docker",
+        icon: "edit",
+        link: "npm-tool/",
+      },
+      {
+        text: "构建工具讲解",
+        icon: "edit",
+        link: "npm-tool/",
+      },
+    ]
+  },
   {text: "168wangxiao-ui", link: "https://spoony_z.gitee.io/168wangxiao-ui"},
   {text: "tsTool-list", link: "https://spoony_z.gitee.io/ts-tool-list/"},
     // {

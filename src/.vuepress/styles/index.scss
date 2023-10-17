@@ -166,3 +166,10 @@ div[class*=language-].line-numbers-mode::after {
 ::v-deep .theme-hope-content pre code .line span {
     font-style: inherit !important;
 }
+
+.blog-page-wrapper {
+    background: url("http://www.bootstrapmb.com/item/14177/preview") center center no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
